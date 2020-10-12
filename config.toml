@@ -1,0 +1,4 @@
+baseURL = "https://blog.leocarvalho.dev/"
+languageCode = "pt-br"
+title = "Léo Carvalho"
+theme="ananke"
