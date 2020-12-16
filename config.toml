@@ -5,7 +5,7 @@ title = "Léo Carvalho"
 theme="hugo-coder"
 
 paginate = 20
-canonifyurls = true
+canonifyurls = false
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
@@ -208,4 +208,4 @@ disqusShortname = "leocarvalho"
         [[languages.pt-br.menu.main]]
         name = "Blog"
         weight = 2.0
-        url = "/pt-br/posts/"
+        url = "/posts/"
