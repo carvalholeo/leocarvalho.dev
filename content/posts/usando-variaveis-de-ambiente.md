@@ -56,3 +56,4 @@ Os dois terão conteúdo bem semelhante, com a crucial diferença que o primeiro
 Como o nome sugere, o .env.example é um arquivo que deve servir de exemplo, pois os nomes das constantes que vamos definir aqui devem ser as mesmas que iremos utilizar ao longo do sistema. Podemos definir tantas variáveis quantas forem necessárias, não há um limite formal para elas.
 
 
+{{< browser-update >}}

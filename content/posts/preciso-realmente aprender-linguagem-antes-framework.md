@@ -66,3 +66,6 @@ Em breve, vou escrever um outro artigo, explicando sobre o que se deve fazer par
 [lego]: https://pt.wikipedia.org/wiki/Lego
 [php]: https://www.php.net/
 [estruturas]: http://calhau.dca.fee.unicamp.br/wiki/images/0/01/EstruturasDados.pdf
+
+
+{{< browser-update >}}

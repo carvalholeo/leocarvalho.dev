@@ -146,3 +146,5 @@ Este é um assunto extenso e não é o objetivo desse artigo esgotar o assunto, 
 [googleauth]: https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=pt-BR
 [lastpassauth]: https://lastpass.com/auth/
 [authy]: https://authy.com/
+
+{{< browser-update >}}

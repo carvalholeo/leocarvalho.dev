@@ -48,3 +48,5 @@ Portanto, o conselho básico da vida real para a internet permanece: não entre 
 [cronologia]: https://g1.globo.com/ciencia-e-saude/noticia/2020/01/22/cronologia-da-expansao-do-novo-coronavirus-descoberto-na-china.ghtml
 [karspesky]: https://www.kaspersky.com.br/
 [coronavirus]: https://www.computerweekly.com/news/252477578/First-coronavirus-cyber-threats-seen-in-the-wild
+
+{{< browser-update >}}

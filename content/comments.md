@@ -27,3 +27,5 @@ O comentarista é o único e total responsável por todo conteúdo de sua autori
 **Léo Carvalho** se reserva o direito de apagar comentários que sejam considerados negativos para a imagem do site ou que possam ser usados judicialmente contra seus administradores e editores. Qualquer comentário pode ser apagado sem aviso prévio, a exclusivo critério da administração do site.
 
 Esta política pode ser alterada a qualquer tempo, sem aviso prévio. Recomendamos sua leitura periodicamente.
+
+{{< browser-update >}}

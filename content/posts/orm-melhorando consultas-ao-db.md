@@ -75,5 +75,7 @@ Dessa forma, além de diminuir a barreira de entrada no mundo da programação, 
 É claro que nesse artigo não tenho a intenção de esgotar o assunto que, por si só daria uma série de tutoriais e explicações (talvez o faça no futuro). Mas estou abertos a feedbacks sobre esse assunto e como melhorar esse artigo :-)
 
 
-[framework]: http://localhost:4000/preciso-realmente-aprender-linguagem-antes-framework/
+[framework]: /posts/preciso-realmente-aprender-linguagem-antes-framework/
 [crud]: http://devfuria.com.br/sql/mysql-crud/
+
+{{< browser-update >}}

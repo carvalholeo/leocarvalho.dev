@@ -22,3 +22,5 @@ Sem mais delongas, aqui estão os links para acesso.
 [privacidade]: /privacy-policy
 [comentarios]: /comments
 [etica]: https://github.com/brazil-it-groups/code-of-conduct/blob/master/README.md
+
+{{< browser-update >}}
