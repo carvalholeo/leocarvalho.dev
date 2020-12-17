@@ -22,15 +22,7 @@ Por outro lado, você também não tem noção de onde vem toda a energia consum
 
 *"Mas Léo, o que esse papo tem haver ORMs e programação??"*
 
-<p align="center">
-<iframe 
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/vSy-U2MUuOA"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</p>
+{{< iframe-youtube "https://www.youtube.com/embed/vSy-U2MUuOA" >}}
 
 Simples. As responsabilidades são bem dividas e claras.
 
@@ -42,26 +34,10 @@ ORM é uma sigla que significa *"Object Relational Mapping"*, ou "Mapeamento de 
 
 Bem, se é um mapeamento, então temos uma espécie de "tradução". Então, vamos os termos originais e seus correspondentes.
 
-<div class="table-responsive">
-    <table class="table table-bordered table-hover table-sm">
-        <thead>
-            <tr>
-                <th scope="col">SQL (Relação)</th>
-                <th scope="col">ORM (Objeto)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Tabelas</td>
-                <td>Classes</td>
-            </tr>
-            <tr>
-                <td>Linhas (registros ou tuplas)</td>
-                <td>Instâncias</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+| SQL (Relação)                | ORM (Objeto) |
+|------------------------------|--------------|
+| Tabelas                      | Classes      |
+| Linhas (registros ou tuplas) | Instâncias   |
 
 Assim, ao invés de trabalhar com uma string ou um array que vem como resposta do banco de dados, você utiliza instâncias de objetos da sua própria aplicação, que pode trazer as regras de tipos e objetos para os dados que serão utilizados. Além disso, como dito anteriormente, não precisa se preocupar com os comandos SQL utilizados; apenas com as classes e suas instâncias.
 

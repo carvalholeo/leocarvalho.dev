@@ -1,0 +1,142 @@
+author = "Leo Carvalho"
+info = "Back-end developer | Node.js | Express | Programming Teacher"
+description = "John Doe's personal website"
+keywords = "blog, developer, personal"
+avatarurl = "images/leo.jpg"
+gravatar = "carvalho.csleo@gmail.com"
+
+favicon_32 = "/images/icons/favicon-32x32.png"
+favicon_16 = "/images/icons/favicon-16x16.png"
+touchIcon = "/images/icons/apple-touch-icon.png"
+
+footercontent = "Enter a text here."
+
+hideFooter = false
+hideCredits = false
+hideCopyright = false
+since = 2020
+
+hideColorSchemeToggle = false
+colorScheme = "dark"
+
+enableTwemoji = true
+
+rtl = false
+
+math = true
+customCSS = ["assets/css/theme.css"]
+
+buildDrafts = false
+buildFuture = true
+enableRobotsTXT = true
+
+[[social]]
+  name = "Blog Técnico"
+  icon = "fa fa-file-text fa-3x"
+  weight = 1
+  url = "/posts/"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "GitHub"
+  icon = "fa fa-github fa-3x"
+  weight = 2.1
+  url = "https://github.com/carvalholeo/"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-3x"
+  weight = 3.9
+  url = "https://twitter.com/_carvalho_leo/"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Instagram"
+  icon = "fa fa-instagram fa-3x"
+  weight = 4
+  url = "https://www.instagram.com/carvalho_leo"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Telegram"
+  icon = "fa fa-telegram fa-3x"
+  weight = 5
+  url = "https://t.me/carvalho_leo"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Pinterest"
+  icon = "fa fa-pinterest fa-3x"
+  weight = 6
+  url = "https://pinterest.com/carvalho_leo/"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "YouTube"
+  icon = "fa fa-youtube-play fa-3x"
+  weight = 7
+  url = "https://www.youtube.com/channel/UC8c7IUMpnczt9pmsHlXYxXw"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Stack Overflow"
+  icon = "fa fa-stack-overflow fa-3x"
+  weight = 8
+  url = "https://stackoverflow.com/users/11656950/leonardo-carvalho"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-3x"
+  weight = 2.0
+  url = "https://www.linkedin.com/in/carvalholeo/"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Blog pessoal"
+  icon = "fa fa-wordpress fa-3x"
+  weight = 10
+  url = "https://carvalholeo.wordpress.com/"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "WhatsApp"
+  icon = "fa fa-whatsapp fa-3x"
+  weight = 3.0
+  url = "http://wa.me/5513997375760?source=site&text=Oi, te achei pelo seu site! Vamos conversar?"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Facebook"
+  icon = "fa fa-facebook fa-3x"
+  weight = 12
+  url = "https://www.facebook.com/carvalho.leo95/"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "E-mail"
+  icon = "fa fa-envelope fa-3x"
+  weight = 3.1
+  url = "mailto:leo@leocarvalho.dev"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "E-mail"
+  icon = "fa fa-phone fa-3x"
+  weight = 3.2
+  url = "tel:(13)99737-5760"
+  rel = "noopener noreferrer"

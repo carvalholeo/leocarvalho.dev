@@ -1,0 +1,18 @@
+languagename = "Portuguese"
+title = "Leo Carvalho"
+
+[params]
+    description = "Strona domowa John'a Doe"
+    keywords = "blog, developer, personal"
+    info = "Desenvolvedor back-end e professor de programação"
+
+[menu]
+    [[menu.main]]
+    name = "Sobre mim"
+    weight = 1.0
+    url = "/about/"
+
+    [[menu.main]]
+    name = "Postagens sensacionais"
+    weight = 2.0
+    url = "/posts/"

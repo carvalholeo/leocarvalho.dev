@@ -1,11 +1,11 @@
 baseURL = "https://vigilant-lamarr-e5a39f.netlify.app/"
-languagecode = "en"
-defaultcontentlanguage = "en"
-title = "Léo Carvalho"
+languagecode = "pt-br"
+defaultcontentlanguage = "pt-br"
+title = "Leo Carvalho"
 theme="hugo-coder"
 
 paginate = 20
-canonifyurls = false
+canonifyurls = true
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
@@ -13,199 +13,14 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "leocarvalho"
 
-[params]
-    author = "Leo Carvalho"
-    info = "Back-end developer | Node.js | Express | Programming Teacher"
-    description = "John Doe's personal website"
-    keywords = "blog, developer, personal"
-    avatarurl = "images/leo.jpg"
-    gravatar = "carvalho.csleo@gmail.com"
+googleAnalytics = "UA-139872605-1"
 
-    favicon_32 = "/images/icons/favicon-32x32.png"
-    favicon_16 = "/images/icons/favicon-16x16.png"
-    touchIcon = "/images/icons/apple-touch-icon.png"
-
-    footercontent = "Enter a text here."
-
-    hideFooter = false
-    hideCredits = false
-    hideCopyright = false
-    since = 2020
-
-    hideColorSchemeToggle = false
-    colorScheme = "dark"
-
-    enableTwemoji = true
-
-    rtl = false
-
-    math = true
-    custom_css = ["css/custom.css"]
-
-# Social links
-[[params.social]]
-    name = "Blog Técnico"
-    icon = "fa fa-file-text fa-3x"
-    weight = 1
-    url = "/posts/"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "GitHub"
-    icon = "fa fa-github fa-3x"
-    weight = 2.1
-    url = "https://github.com/carvalholeo/"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "Twitter"
-    icon = "fa fa-twitter fa-3x"
-    weight = 3.9
-    url = "https://twitter.com/_carvalho_leo/"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "Instagram"
-    icon = "fa fa-instagram fa-3x"
-    weight = 4
-    url = "https://www.instagram.com/carvalho_leo"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "Telegram"
-    icon = "fa fa-telegram fa-3x"
-    weight = 5
-    url = "https://t.me/carvalho_leo"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "Pinterest"
-    icon = "fa fa-pinterest fa-3x"
-    weight = 6
-    url = "https://pinterest.com/carvalho_leo/"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "YouTube"
-    icon = "fa fa-youtube-play fa-3x"
-    weight = 7
-    url = "https://www.youtube.com/channel/UC8c7IUMpnczt9pmsHlXYxXw"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "Stack Overflow"
-    icon = "fa fa-stack-overflow fa-3x"
-    weight = 8
-    url = "https://stackoverflow.com/users/11656950/leonardo-carvalho"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fa fa-linkedin fa-3x"
-    weight = 2.0
-    url = "https://www.linkedin.com/in/carvalholeo/"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "Blog pessoal"
-    icon = "fa fa-wordpress fa-3x"
-    weight = 10
-    url = "https://carvalholeo.wordpress.com/"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "WhatsApp"
-    icon = "fa fa-whatsapp fa-3x"
-    weight = 3.0
-    url = "http://wa.me/5513997375760?source=site&text=Oi, te achei pelo seu site! Vamos conversar?"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "Facebook"
-    icon = "fa fa-facebook fa-3x"
-    weight = 12
-    url = "https://www.facebook.com/carvalho.leo95/"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "E-mail"
-    icon = "fa fa-envelope fa-3x"
-    weight = 3.1
-    url = "mailto:leo@leocarvalho.dev"
-    target = "_blank"
-    rel = "noopener noreferrer"
-
-[[params.social]]
-    name = "E-mail"
-    icon = "fa fa-phone fa-3x"
-    weight = 3.2
-    url = "tel:(13)99737-5760"
-    rel = "noopener noreferrer"
-
-
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
-
-[languages]
-[languages.en]
-    languagename = "English" # The language name to be displayed in the selector.
-    title = "Leo Carvalho"
-
-    # You can configure the theme parameter for each language.
-    [languages.en.params]
-    info = "Full Stack DevOps and Magician"
-    description = "John Doe's personal website"
-    keywords = "blog,developer,personal"
-
-    [languages.en.menu] # It is possible to change the menu too.
-
-    [[languages.en.menu.main]]
-    name = "About"
-    weight = 1.0
-    url = "/about/"
-
-    [[languages.en.menu.main]]
-    name = "Blog"
-    weight = 2.0
-    url = "/posts/"
-
-
-[languages.pt-br]
-    languagename = "Portuguese"
-    title = "John Doe po polsku"
-
-    [languages.pt-br.params]
-        description = "Strona domowa John'a Doe"
-        keywords = "blog,developer,strona domowa"
-        info = "Full Stack DevOps i Magik"
-
-    [languages.pt-br.menu]
-
-        [[languages.pt-br.menu.main]]
-        name = "O mnie"
-        weight = 1.0
-        url = "/pt-br/about/"
-
-        [[languages.pt-br.menu.main]]
+[menu]
+    [[menu.main]]
         name = "Blog"
         weight = 2.0
-        url = "/posts/"
+        url  = "/posts/"
+    [[menu.main]]
+        name = "About"
+        weight = 1.0
+        url = "/about/"

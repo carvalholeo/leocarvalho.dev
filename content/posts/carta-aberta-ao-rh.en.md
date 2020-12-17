@@ -27,64 +27,15 @@ De onde eu tirei esse pensamento? Da minha estadia na Atento, que à época em q
 
 Pois bem. Como disse anteriormente, foram mais de 19 meses, e agora, finalmente recolocado, me sinto no dever de publicar os dados sobre minhas candidaturas, com as respectivas taxas percentuais.
 
-<div class="table-responsive">
-    <table class="table table-bordered table-hover table-sm">
-        <thead>
-            <tr>
-                <th scope="col">FASE</th>
-                <th scope="col">QUANT.</th>
-                <th scope="col">PERCENTUAL</th>
-                <th scope="col">FÓRMULA UTILIZADA</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Currículos enviados</td>
-                <td>400</td>
-                <td colspan="2"></td>
-            </tr>
-            <tr>
-                <td>Retorno negativo (análise de currículo)</td>
-                <td>73</td>
-                <td>18,25%</td>
-                <td>Retorno negativo/currículos enviados</td>
-            </tr>
-            <tr>
-                <td>Entrevista agendada</td>
-                <td>16</td>
-                <td>4,00%</td>
-                <td>Entrevista agendada/currículos enviados</td>
-            </tr>
-            <tr>
-                <td>Resposta da entrevista</td>
-                <td>10</td>
-                <td>62,50%</td>
-                <td>Resp. de entrevista/entrevista agendada</td>
-            </tr>
-            <tr>
-                <td>Soma dos retornos (retorno negativo + resposta de entrevista)</td>
-                <td>83</td>
-                <td>20,75%</td>
-                <td>Retorno negativo + resposta da entrevista</td>
-            </tr>
-            <tr>
-                <td>Propostas de trabalho</td>
-                <td>1</td>
-                <td>0,25%</td>
-                <td>Prop. de trabalho/currículos enviados</td>
-            </tr>
-            <tr>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
-                <td>Feedback efetivo sobre o retorno negativo</td>
-                <td>5</td>
-                <td>6,02%</td>
-                <td>Feedbacks recebidos/soma dos retornos negativos</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+| FASE                                    | QUANT. | PERCENTUAL | FÓRMULA UTILIZADA                         |
+|-----------------------------------------|--------|------------|-------------------------------------------|
+| Currículos enviados                     | 400    |                                                        |
+| Retorno negativo (análise de currículo) | 73     | 18,25%     | Retorno negativo/currículos enviados      |
+| Entrevista agendada                     | 16     | 4,00%      | Entrevista agendada/currículos enviados   |
+| Resposta da entrevista                  | 10     | 62,50%     | Resp. de entrevista/entrevista agendada   |
+| Total dos retornos                      | 83     | 20,75%     | Retorno negativo + resposta da entrevista |
+|                                                                                                           |
+| Propostas de trabalho                   | 1      | 0,25%      | Prop. de trabalho/currículos enviados     |
 
 Neste ponto, talvez você queira me perguntar, “mas você solicitou feedback às empresas”? E a resposta foi sim. Para todas que me forneceram um meio de contato, entrei em contato (4 empresas, no total). Nenhuma falou o motivo.
 
