@@ -1,14 +1,12 @@
 ---
-author: leo
-categories:
-- blog
-- início
-date: "2020-01-30T00:00:00Z"
-image: assets/images/start.webp
-tags:
-- featured
-- começando
 title: Recomeçando (de novo) o blog
+date: '2020-01-30T00:00:00Z'
+categories:
+  - blog
+  - início
+tags:
+  - featured
+  - começando
 ---
 Depois de muito tempo sem escrever, aí vamos nós novamente. Por alguns anos, mantive (na verdade, ele existe até hoje) um blog com conteúdo religioso, onde, de vez em quando, eu postava conteúdo técnico. Por alguma razão, que não lembro qual agora, apaguei quase tudo.
 
@@ -52,4 +50,4 @@ Bem, é uma nova era (pessoal e profissional). Muito obrigado por estar aqui!
 [mundana]: https://www.wowthemes.net/mundana-jekyll-theme/
 [wowthemes]: https://www.wowthemes.net/
 [fork-mundana]: https://github.com/wowthemesnet/mundana-theme-jekyll
-[termos]: {{link}}/termos.html
+[termos]: /termos.html
