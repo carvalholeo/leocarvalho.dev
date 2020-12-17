@@ -140,3 +140,10 @@ enableRobotsTXT = true
   weight = 3.2
   url = "tel:(13)99737-5760"
   rel = "noopener noreferrer"
+
+[[social]]
+  name = "Lattes"
+  icon = "fa fa-flask fa-3x"
+  weight = 3.3
+  url = "http://lattes.cnpq.br/3759113149575688"
+  rel = "noopener noreferrer"
