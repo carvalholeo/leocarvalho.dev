@@ -68,4 +68,5 @@ Em breve, vou escrever um outro artigo, explicando sobre o que se deve fazer par
 [estruturas]: http://calhau.dca.fee.unicamp.br/wiki/images/0/01/EstruturasDados.pdf
 
 
+{{< ads >}}
 {{< browser-update >}}

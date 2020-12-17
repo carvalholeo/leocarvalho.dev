@@ -147,4 +147,5 @@ Este é um assunto extenso e não é o objetivo desse artigo esgotar o assunto, 
 [lastpassauth]: https://lastpass.com/auth/
 [authy]: https://authy.com/
 
+{{< ads >}}
 {{< browser-update >}}

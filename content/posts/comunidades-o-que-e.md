@@ -32,4 +32,5 @@ Para encerrar, gostaria de dedicar esse espaço final para uma comunidade, inici
 
 [programadoresbr]: https://www.facebook.com/groups/pr0gramad0resbr/
 
+{{< ads >}}
 {{< browser-update >}}

@@ -83,4 +83,5 @@ A você que está na luta por uma recolocação: não desista. Eu sei o quanto d
 [atento]: http://www.atento.com/pt/atento-no-mundo/brasil
 [gptw]: https://gptw.com.br/
 
+{{< ads >}}
 {{< browser-update >}}

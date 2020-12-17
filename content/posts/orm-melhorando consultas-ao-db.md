@@ -78,4 +78,5 @@ Dessa forma, além de diminuir a barreira de entrada no mundo da programação, 
 [framework]: /posts/preciso-realmente-aprender-linguagem-antes-framework/
 [crud]: http://devfuria.com.br/sql/mysql-crud/
 
+{{< ads >}}
 {{< browser-update >}}
