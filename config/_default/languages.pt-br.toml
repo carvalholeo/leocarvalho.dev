@@ -13,6 +13,6 @@ title = "Leo Carvalho"
     url = "/about/"
 
     [[menu.main]]
-    name = "Postagens sensacionais"
+    name = "Blog"
     weight = 2.0
     url = "/posts/"
