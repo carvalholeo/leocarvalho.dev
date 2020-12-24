@@ -1,1 +1,44 @@
-<script data-ad-client="ca-pub-1577931231143329" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  const bodyDocument = document.querySelector('body');
+  const head = document.querySelector('head');
+
+  bodyDocument.onload = event => {
+    const path = location.pathname.match(/^\/posts\/.+/i);
+    const configURL = "{{ .Site.BaseURL }}";
+    const navigatorURL = `${location.origin}/`;
+
+    const isServer = configURL === navigatorURL ? true : false;
+    const isPost = path === null ? false : path.length > 0 ? true : false;
+
+    if (isServer && isPost) {
+      const ads = document.createElement('script');
+      ads.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
+      ads.setAttribute('data-ad-client', 'ca-pub-1577931231143329');
+      head.append(ads);
+
+      // Google AMP Ads Temporariamente desativado
+
+      // const ampScript = document.createElement('script');
+      // ampScript.setAttribute('src', "https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js");
+      // ampScript.setAttribute('custom-element', 'amp-auto-ads');
+      // head.append(ampScript);
+
+      // const amp = document.createElement('amp-auto-ads');
+      // amp.setAttribute('type', 'adsense');
+      // amp.setAttribute('data-ad-client', 'ca-pub-1577931231143329');
+      // bodyDocument.append(amp);
+
+      const advertsigns = document.querySelectorAll('ins.adsbygoogle');
+      advertsigns.forEach(ads => {
+        ads.insertAdjacentHTML('beforebegin', `
+        <hr />
+        <p>CONTINUA APÓS A PUBLICIDADE</p>
+      `);
+
+        ads.insertAdjacentHTML('afterend', '<hr />');
+      });
+    }
+  }
+
+
+</script>

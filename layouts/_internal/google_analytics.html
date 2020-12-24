@@ -1,0 +1,62 @@
+{{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
+{{- if not $pc.Disable -}}
+{{ with .Site.GoogleAnalytics }}
+
+<script>
+
+  const analyticsKey = '{{ . }}';
+  const analyticsURL = `https:\/\/www.googletagmanager.com/gtag/js?id=${analyticsKey}`;
+  const navigatorURL = `${location.origin}/`;
+
+  const headAnalytics = document.querySelector('head');
+  const scriptAnalytics = document.createElement('script');
+  scriptAnalytics.setAttribute('src', analyticsURL);
+  headAnalytics.appendChild(scriptAnalytics);
+
+  {{ template "__ga_js_set_doNotTrack" $ }}
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  if (!doNotTrack) {
+    gtag('consent', 'default', {
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted'
+    })
+
+    gtag('config', analyticsKey, {
+      'link_attribution': {
+        'cookie_name': '_site',
+        'cookie_domain': navigatorURL,
+        'cookie_expires': 0,
+        'levels': 6
+      }
+    });
+
+  } else {
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    })
+    gtag('config', analyticsKey)
+    {{ if $pc.AnonymizeIP }}
+    gtag('set', 'anonymizeIp', true);
+    {{ end }}
+  }
+</script>
+{{ end }}
+{{- end -}}
+
+{{- define "__ga_js_set_doNotTrack" -}}{{/* This is also used in the async version. */}}
+{{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
+{{- if not $pc.RespectDoNotTrack -}}
+  const doNotTrack = false;
+{{- else -}}
+  const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+  const doNotTrack = (dnt === "1" || dnt === "yes");
+{{- end -}}
+{{- end -}}
+
+{{- template "shortcodes/ads.html" . -}}
+{{- template "shortcodes/browser-update.html" . -}}
