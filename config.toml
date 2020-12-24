@@ -13,7 +13,13 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "leocarvalho"
 
-googleAnalytics = "UA-139872605-1"
+googleAnalytics = "G-JPYP6KQCR1"
+
+[privacy]
+[privacy.GoogleAnalytics]
+    RespectDoNotTrack = true
+    AnonymizeIP = true
+    Disable = false
 
 [menu]
     [[menu.main]]
