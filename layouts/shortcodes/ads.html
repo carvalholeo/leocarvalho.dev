@@ -1,8 +1,8 @@
 <script>
-  const bodyDocument = document.querySelector('body');
+  const bodyAds = document.querySelector('body');
   const head = document.querySelector('head');
 
-  bodyDocument.onload = event => {
+  bodyAds.onload = event => {
     const path = location.pathname.match(/^\/posts\/.+/i);
     const configURL = "{{ .Site.BaseURL }}";
     const navigatorURL = `${location.origin}/`;
@@ -26,7 +26,7 @@
       // const amp = document.createElement('amp-auto-ads');
       // amp.setAttribute('type', 'adsense');
       // amp.setAttribute('data-ad-client', 'ca-pub-1577931231143329');
-      // bodyDocument.append(amp);
+      // bodyAds.append(amp);
 
       const advertsigns = document.querySelectorAll('ins.adsbygoogle');
       advertsigns.forEach(ads => {
