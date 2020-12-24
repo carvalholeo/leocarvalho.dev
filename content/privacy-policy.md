@@ -79,5 +79,3 @@ Para quaisquer dúvidas ou preocupações a respeito desta política de privacid
 [adsDisqus]: https://disqus.com/data-sharing-settings/
 [ppAddtoany]: https://www.addtoany.com/privacy
 [contactLink]: mailto:leo@leocarvalho.dev
-
-{{< browser-update >}}

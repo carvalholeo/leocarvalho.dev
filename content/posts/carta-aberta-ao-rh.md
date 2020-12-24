@@ -82,6 +82,3 @@ A você que está na luta por uma recolocação: não desista. Eu sei o quanto d
 [deficit]: http://www.sindpd.org.br/sindpd/site/noticia.jsp?id=1565192199828
 [atento]: http://www.atento.com/pt/atento-no-mundo/brasil
 [gptw]: https://gptw.com.br/
-
-{{< ads >}}
-{{< browser-update >}}

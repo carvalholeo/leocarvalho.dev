@@ -31,6 +31,3 @@ A melhor parte das comunidades é que você pode se engajar com temas com os qua
 Para encerrar, gostaria de dedicar esse espaço final para uma comunidade, iniciada no Facebook, do qual sou Gerente de Projetos. É a ProgramadoresBR, que tem como finalidade juntar desenvolvedores das mais diversas linguagens de programação em um local e criar algo como uma "ágora", mas de conteúdos técnicos, com foco em ajudar profissionais, estudantes e entusiastas de desenvolvimento de todos os níveis de senioridade. Se você quiser conhecer, pode [entrar no grupo aqui][programadoresbr]. Temos um grupo no WhatsApp e um quase grupo no Telegram (links desses apps disponíveis dentro do grupo no Facebook.)
 
 [programadoresbr]: https://www.facebook.com/groups/pr0gramad0resbr/
-
-{{< ads >}}
-{{< browser-update >}}

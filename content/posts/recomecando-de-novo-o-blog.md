@@ -51,6 +51,3 @@ Bem, é uma nova era (pessoal e profissional). Muito obrigado por estar aqui!
 [wowthemes]: https://www.wowthemes.net/
 [fork-mundana]: https://github.com/wowthemesnet/mundana-theme-jekyll
 [termos]: /termos.html
-
-{{< ads >}}
-{{< browser-update >}}

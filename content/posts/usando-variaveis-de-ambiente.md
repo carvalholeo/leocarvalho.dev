@@ -54,7 +54,3 @@ Feito isso, vamos criar, na raiz do projeto, dois arquivos com nomes parecidos:
 Os dois terão conteúdo bem semelhante, com a crucial diferença que o primeiro não recebe dados reais e pode ser commitado, enquanto que o arquivo .env é colocado dentro do .gitignore e tem as senhas e dados reais do ambiente.
 
 Como o nome sugere, o .env.example é um arquivo que deve servir de exemplo, pois os nomes das constantes que vamos definir aqui devem ser as mesmas que iremos utilizar ao longo do sistema. Podemos definir tantas variáveis quantas forem necessárias, não há um limite formal para elas.
-
-
-{{< ads >}}
-{{< browser-update >}}
