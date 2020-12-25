@@ -6,3 +6,7 @@ body.colorscheme-dark .highlight pre{
 body.colorscheme-light .highlight pre{
   background-color: #dfdfdf !important;
 }
+
+body.colorscheme-dark .content .centered .about ul li a {
+  line-height: 5rem;
+}
