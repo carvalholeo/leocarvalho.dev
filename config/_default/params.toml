@@ -19,12 +19,13 @@ since = 2020
 hideColorSchemeToggle = false
 colorScheme = "dark"
 
-enableTwemoji = true
+enableTwemoji = false
 
 rtl = false
 
 math = true
 customCSS = ["assets/css/theme.css"]
+customJS = ["assets/js/twemoji.min.js"]
 
 buildDrafts = false
 buildFuture = true

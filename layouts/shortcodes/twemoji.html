@@ -1,7 +1,7 @@
 <script>
   const bodyTwemoji = document.querySelector('body');
 
-  bodyTwemoji.onload = event => {
+  window.addEventListener('load', event => {
     twemoji.parse(bodyTwemoji);
-  }
+  })
 </script>
