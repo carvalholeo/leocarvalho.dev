@@ -2,9 +2,9 @@ languagename = "English"
 title = "Leo Carvalho"
 
 [params]
-info = "Full Stack DevOps and Magician"
-description = "John Doe's personal website"
-keywords = "blog,developer,personal"
+info = "Back-end developer, development teacher, and Ph.D. in bad jokes"
+description = "Leo Carvalho is a back-end developer (Node.js, PHP and C#) and development teacher. Christian, 25y, graduated in Systems' Analysis and Development on Estácio and single until now."
+keywords = "leo carvalho, c# developer, node developer, node.js developer, php developer, .net, c#, node, node.js, javascript, back-end developer, expressjs, git, github, technical blog, tech blog, tutorial, blog"
 
 [menu]
 

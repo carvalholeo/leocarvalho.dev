@@ -1,10 +1,10 @@
 languagename = "Portuguese"
-title = "Leo Carvalho"
+title = "Léo Carvalho"
 
 [params]
-    description = "Strona domowa John'a Doe"
-    keywords = "blog, developer, personal"
-    info = "Desenvolvedor back-end e professor de programação"
+    description = "Léo Carvalho é desenvolvedor back-end (Node.js, PHP e C#) e professor de programação. Cristão, tem 25 anos, é graduado em Análise e Desenvolvimento de sistemas pela Estácio e solteiro até agora."
+    keywords = "léo carvalho, desenvolvedor c#, desenvolvedor node, desenvolvedor node.js, desenvolvedor php, .net, c#, node, node.js, javascript, desenvolvedor back-end, expressjs, git, github, blog técnico, tutorais, blog"
+    info = "Desenvolvedor back-end, professor de programação e falador de abobrinha"
 
 [menu]
     [[menu.main]]

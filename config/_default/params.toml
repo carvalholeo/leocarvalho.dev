@@ -1,7 +1,7 @@
 author = "Leo Carvalho"
-info = "Back-end developer | Node.js | Express | Programming Teacher"
-description = "John Doe's personal website"
-keywords = "blog, developer, personal"
+info = "Desenvolvedor back-end, professor de programação e falador de abobrinha"
+description = "Léo Carvalho é desenvolvedor back-end (Node.js, PHP e C#) e professor de programação. Cristão, tem 25 anos, é graduado em Análise e Desenvolvimento de sistemas pela Estácio e solteiro até agora."
+keywords = "léo carvalho, desenvolvedor c#, desenvolvedor node, desenvolvedor node.js, desenvolvedor php, .net, c#, node, node.js, javascript, desenvolvedor back-end, expressjs, git, github, blog técnico, tutorais, blog"
 avatarurl = "images/leo.jpg"
 gravatar = "carvalho.csleo@gmail.com"
 
@@ -9,7 +9,7 @@ favicon_32 = "/images/icons/favicon-32x32.png"
 favicon_16 = "/images/icons/favicon-16x16.png"
 touchIcon = "/images/icons/apple-touch-icon.png"
 
-footercontent = "Enter a text here."
+footercontent = "Made with ♥ from Guarujá/🇧🇷"
 
 hideFooter = false
 hideCredits = false
