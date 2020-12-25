@@ -135,7 +135,7 @@ enableRobotsTXT = true
   rel = "noopener noreferrer"
 
 [[social]]
-  name = "E-mail"
+  name = "Telefone"
   icon = "fa fa-phone fa-3x"
   weight = 3.2
   url = "tel:(13)99737-5760"
@@ -146,4 +146,29 @@ enableRobotsTXT = true
   icon = "fa fa-flask fa-3x"
   weight = 3.3
   url = "http://lattes.cnpq.br/3759113149575688"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Spotify"
+  icon = "fa fa-spotify fa-3x"
+  weight = 10
+  url = "https://open.spotify.com/user/_carvalho_leo?si=FlkGu_bOSAGrqWz3dhqCbg"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Skype"
+  icon = "fa fa-skype fa-3x"
+  weight = 10
+  url = "https://join.skype.com/invite/rICfbfqsn2c8"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
+  name = "Twitch"
+  icon = "fa fa-twitch fa-3x"
+  weight = 7
+  url = "https://www.twitch.tv/carvalho_leo"
+  target = "_blank"
   rel = "noopener noreferrer"
