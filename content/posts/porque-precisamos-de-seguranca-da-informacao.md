@@ -6,7 +6,6 @@ categories:
 date: "2020-02-01T00:00:00Z"
 image: assets/images/cadeados.webp
 tags:
-- featured
 - dicas
 - autenticação
 - dois fatores

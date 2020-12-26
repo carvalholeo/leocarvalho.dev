@@ -10,7 +10,6 @@ tags:
 - iniciantes
 - linguagens
 - frameworks
-- featured
 - orm
 title: 'ORM: melhorando o jeito que você consulta seu banco de dados'
 ---

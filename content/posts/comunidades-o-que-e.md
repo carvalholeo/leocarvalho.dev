@@ -6,7 +6,6 @@ categories:
 date: "2020-01-31T00:00:00Z"
 image: assets/images/cooperacao-uniao-maos.webp
 tags:
-- featured
 - comunidades
 - programadoresbr
 - cooperação

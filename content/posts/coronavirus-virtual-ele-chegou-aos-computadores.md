@@ -6,7 +6,6 @@ categories:
 date: "2020-02-07T00:00:00Z"
 image: assets/images/coronavirus.webp
 tags:
-- featured
 - noticias
 - coronavírus
 - vírus

@@ -7,8 +7,6 @@ categories:
 date: "2020-10-06T00:00:00Z"
 image: assets/images/variaveis-ambiente.webp
 tags:
-- sticky
-- featured
 - tutorial
 - seguranca
 - senhas

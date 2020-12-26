@@ -7,7 +7,6 @@ categories:
 date: "2020-04-12T00:00:00Z"
 image: assets/images/rh.webp
 tags:
-- featured
 - estatisticas
 - rh
 - contratacao

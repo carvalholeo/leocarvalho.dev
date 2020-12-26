@@ -10,7 +10,6 @@ tags:
 - iniciantes
 - linguagens
 - frameworks
-- featured
 title: Eu realmente preciso aprender a linguagem antes do framework?
 ---
 Geralmente, quando alguém me pergunta: *"Léo, devo começar aprendendo o framework A ou B?"*, minha resposta é: *"Quanto você sabe da linguagem base do framework?"*. E, quase sempre, a resposta é "pouco" ou "quase nada". Entender isso é a diferença entre começar a construir uma casa pelo telhado ou pela fundação.
