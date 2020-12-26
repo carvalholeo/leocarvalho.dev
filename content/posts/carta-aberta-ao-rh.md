@@ -13,7 +13,7 @@ tags:
   - emprego
 autoThumbnailImage: true
 thumbnailImage: /images/uploads/rh.webp
-coverImage: /images/uploads/rh.webp
+coverImage: ''
 ---
 Depois de muito tempo estando desempregado, hoje posso dizer que minha hora chegou e fui recolocado. Confesso, é uma missão ingrata, difícil, quase insuportável, e por que não dizer insatisfatória? É, mais do que nunca, uma luta com a sua autoestima, seus valores e princípios, de saber até onde você vai, se molda ao meio e muda para conquistar a tão sonhada vaga.
 
