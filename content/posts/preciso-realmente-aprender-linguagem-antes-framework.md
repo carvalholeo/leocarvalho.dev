@@ -1,16 +1,15 @@
 ---
-author: leo
-categories:
-- Por onde começar
-date: "2020-02-16T00:00:00Z"
-image: assets/images/planta.webp
-tags:
-- programacao
-- dicas
-- iniciantes
-- linguagens
-- frameworks
 title: Eu realmente preciso aprender a linguagem antes do framework?
+date: '2020-02-16T00:00:00Z'
+categories:
+  - Por onde começar
+tags:
+  - programacao
+  - dicas
+  - iniciantes
+  - linguagens
+  - frameworks
+thumbnailImage: /images/uploads/planta.webp
 ---
 Geralmente, quando alguém me pergunta: *"Léo, devo começar aprendendo o framework A ou B?"*, minha resposta é: *"Quanto você sabe da linguagem base do framework?"*. E, quase sempre, a resposta é "pouco" ou "quase nada". Entender isso é a diferença entre começar a construir uma casa pelo telhado ou pela fundação.
 
