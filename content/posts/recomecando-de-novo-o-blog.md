@@ -6,6 +6,7 @@ categories:
   - início
 tags:
   - começando
+coverImage: /images/uploads/start.webp
 ---
 Depois de muito tempo sem escrever, aí vamos nós novamente. Por alguns anos, mantive (na verdade, ele existe até hoje) um blog com conteúdo religioso, onde, de vez em quando, eu postava conteúdo técnico. Por alguma razão, que não lembro qual agora, apaguei quase tudo.
 
