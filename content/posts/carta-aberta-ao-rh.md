@@ -1,18 +1,19 @@
 ---
-author: leo
-categories:
-- Contratação
-- Pessoas
-- RH
-date: "2020-04-12T00:00:00Z"
-image: assets/images/rh.webp
-tags:
-- estatisticas
-- rh
-- contratacao
-- pessoas
-- emprego
 title: 'Carta aberta ao RH '
+date: '2020-04-12T00:00:00Z'
+categories:
+  - Contratação
+  - Pessoas
+  - RH
+tags:
+  - estatisticas
+  - rh
+  - contratacao
+  - pessoas
+  - emprego
+autoThumbnailImage: true
+thumbnailImage: /images/uploads/rh.webp
+coverImage: /images/uploads/rh.webp
 ---
 Depois de muito tempo estando desempregado, hoje posso dizer que minha hora chegou e fui recolocado. Confesso, é uma missão ingrata, difícil, quase insuportável, e por que não dizer insatisfatória? É, mais do que nunca, uma luta com a sua autoestima, seus valores e princípios, de saber até onde você vai, se molda ao meio e muda para conquistar a tão sonhada vaga.
 
