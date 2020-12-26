@@ -1,17 +1,17 @@
 ---
-author: leo
-categories:
-- segurança
-- noticias
-date: "2020-02-07T00:00:00Z"
-image: assets/images/coronavirus.webp
-tags:
-- noticias
-- coronavírus
-- vírus
-- ameaças
-- pesquisas
 title: 'Vírus humano e virtual: o Coronavírus virtual está entre nós!'
+date: '2020-02-07T00:00:00Z'
+categories:
+  - segurança
+  - noticias
+tags:
+  - noticias
+  - coronavírus
+  - vírus
+  - ameaças
+  - pesquisas
+autoThumbnailImage: false
+thumbnailImage: /images/uploads/coronavirus.webp
 ---
 Enquanto o mundo está observando atentamente ao surto do COVID-19, popularmente conhecido como Coronavírus, podemos ver um outro tipo de ameaça surgindo entre nós: o Coronavírus virtual.
 
