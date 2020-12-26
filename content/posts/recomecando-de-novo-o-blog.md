@@ -16,21 +16,22 @@ Sendo assim, este blog (dentro do domínio leocarvalho.dev) tem como propósito 
 
 Com frequência de 1 vez por semana, vou lançar aqui posts sobre:
 
- * Comunidades
- * Open Source
- * Dicas de carreira (de quem está começando)
- * Linguagens de programação e frameworks
- * Soft and hard skills
- * Dicas de entrevista
- * Qualquer coisa aleatória que possa ser interessante (do meu ponto de vista, é claro)
+* Comunidades
+* Open Source
+* Dicas de carreira (de quem está começando)
+* Linguagens de programação e frameworks
+* Soft and hard skills
+* Dicas de entrevista
+* Qualquer coisa aleatória que possa ser interessante (do meu ponto de vista, é claro)
 
 Apesar de ser o meu blog, ele tem seu código fonte aberto, disponível no [GitHub][repositorio]. Sendo assim, além do layout do site, também está disponível a pasta com os posts, feito em [Markdown][markdown].
 
 Então, vou aproveitar esse post em específico para contar alguns detalhes da estrutura do site:
- * Ele é feito usando o framework [Jekyll][jekyll], que é feito com base na liguagem Ruby;
- * Ele está hospedado no [GitHub][github], usando a estrutura do [GitHub Pages][ghpages]. Assim, eu consigo publicar posts usando apenas documentos em Markdown, sem me preocupar com banco de dados, gerenciamento de servidor, questões de segurança e cache;
- * Talvez você não tenha percebido, mas este blog está com uma URL diferente do padrão do GH Pages. Isso é devido uma configuração no repositório que me permite direcionar o subdomínio original para o subdomínio personalizado do meu site;
- * Como sou desenvolvedor com foco em back-end, o tema foi feito com base no template [Mundana Jekyll Theme][mundana], criado pelo [WowThemes][wowthemes]. Você pode encontrar o código fonte original do [tema aqui][fork-mundana].
+
+* Ele é feito usando o framework [Jekyll][jekyll], que é feito com base na liguagem Ruby;
+* Ele está hospedado no [GitHub][github], usando a estrutura do [GitHub Pages][ghpages]. Assim, eu consigo publicar posts usando apenas documentos em Markdown, sem me preocupar com banco de dados, gerenciamento de servidor, questões de segurança e cache;
+* Talvez você não tenha percebido, mas este blog está com uma URL diferente do padrão do GH Pages. Isso é devido uma configuração no repositório que me permite direcionar o subdomínio original para o subdomínio personalizado do meu site;
+* Como sou desenvolvedor com foco em back-end, o tema foi feito com base no template [Mundana Jekyll Theme][mundana], criado pelo [WowThemes][wowthemes]. Você pode encontrar o código fonte original do [tema aqui][fork-mundana].
 
 Outra novidade em relação aos sites anteriores que fiz a gestão (sejam projetos ou sites e blogs pessoais) é a existência dos termos de uso e de uma política de privacidade. Eu sei, eu sei: ninguém lê isso. MAAAASSSS, se você quiser ler, pode dar uma olhada em todos os termos legais [nesta página][termos].
 

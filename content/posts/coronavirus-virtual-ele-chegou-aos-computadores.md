@@ -26,21 +26,22 @@ A [Karspesky][karspesky], empresa de cibersegurança e produtora de um dos anti-
 As vítimas, geralmente usuários que estão com medos da infecção pelo COVID-19, recebem links e anexos por e-mails, com ataques já conhecidos, como phishing, engenharia social e alguns elementos de Fake News (com palavras-chave, como "exclusivo", "repasse agora", "estão querendo tirar do ar").
 
 Os arquivos recebidos contém vírus já conhecidos pelo mercado, que estão junto de documentos, imagens, vídeos, planilhas e e-mails (não como anexos, mas como a mensagem em si). Entre os vírus identificados, a Karspesky notificou a existência dos seguintes:
- * Worm.VBS.Dinihou.r
- * Worm.Python.Agent.c
- * UDS:DangerousObject.Multi.Generic
- * Trojan.WinLNK.Agent.gg
- * Trojan.WinLNK.Agent.ew
- * HEUR:Trojan.WinLNK.Agent.gen
- * HEUR:Trojan.PDF.Badur.b
+
+* Worm.VBS.Dinihou.r
+* Worm.Python.Agent.c
+* UDS:DangerousObject.Multi.Generic
+* Trojan.WinLNK.Agent.gg
+* Trojan.WinLNK.Agent.ew
+* HEUR:Trojan.WinLNK.Agent.gen
+* HEUR:Trojan.PDF.Badur.b
 
 Estes, por sua vez, são vírus e trojans comuns, com o intuito de se multiplicar e espalhar pela rede corporativa, destruir, bloquear, copiar e extraviar dados pessoais e corporativos, bem como interferir no funcionamento adequado do dispositivo ou rede da vítima.
 
 Portanto, o conselho básico da vida real para a internet permanece: não entre em sites que você não confia; não baixe, abra ou execute anexos de e-mail cujos remetentes você não confia ou que você suspeita que possam ter sido infectados; links só devem ser abertos pelos sites oficiais e direto pelo navegador, nunca pela mensagem recebida; somente forneça dados pessoais e corporativos a quem for necessário; e por último, sempre cheque as "notícias" que você receber através de sites de notícias e de agências de fact-checking, para que vê não se torne uma vítima e agente das fake news.
-<hr>
+
+---
+
 *Atualização em 16/02/2020: O post foi atualizado com o nome oficial da doença. Onde está escrito 'COVID-19', antes estava 'n2019-CoV'.*
-
-
 
 [sars]: https://pt.wikipedia.org/wiki/S%C3%ADndrome_respirat%C3%B3ria_aguda_grave
 [mers]: https://pt.wikipedia.org/wiki/Coronav%C3%ADrus_da_s%C3%ADndrome_respirat%C3%B3ria_do_Oriente_M%C3%A9dio

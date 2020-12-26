@@ -31,12 +31,11 @@ Preocupado com isso, passei a utilizar um gerenciador de senhas, o [LastPass][la
 
 Desde o Android 8, há uma [opção nativa para gerar e gerenciar as senhas][senhas-android]. Além desses dois, há outros gerenciadores de senha, que são multiplataforma:
 
- * [Dashlane][dashlane]
- * [Keeper][keeper]
- * [1Password][onepassword]
+* [Dashlane][dashlane]
+* [Keeper][keeper]
+* [1Password][onepassword]
 
 Em todos eles, há uma coisa em comum: você precisa lembrar apenas da senha mestra (a que abre o seu cofre de senhas). Todas as outras, você pode esquecer (literalmente). E claro, ter uma senha mestra forte é ESSENCIAL. O Tecnoblog fez uma [matéria comparando][materia-tecnoblog] os gerenciadores de senhas.
-
 
 ## Será que seus dados já vazaram?
 
@@ -53,7 +52,6 @@ Uma técnica bacana que você pode usar para saber onde ocorreu o vazamento (ou 
 Quando qualquer plataforma for te mandar um e-mail, você recebe normalmente, junto com esse identificador. Se o seu e-mail for vazado junto com esse alias, já sabe a origem do vazamento e a quem recorrer (administrativa ou judicialmente).
 
 Para acabar essa seção: se você quer confirmar que o seu usuário não está tentando utilizar uma senha que já foi vazada, você pode olhar a [documentação da API aqui][api-vazamento] e ver como fazer essa integração com sua plataforma.
-
 
 ## Autenticação de dois fatores
 
@@ -73,20 +71,17 @@ No entanto, esta técnica tem uma falha: o [SIM Swap][simswap]. Esta é uma brec
 
 Conclusão: EVITE USAR ESSE MÉTODO, SEMPRE QUE POSSÍVEL. Ponto final.
 
-
 #### Perguntas de segurança
 
 Nesta técnica, você escolhe algumas perguntas de segurança e em seguida preenche as respostas. Evite isso, também, porquê as respostas podem ser utilizadas como recurso para Engenharia Social (e posteriormente usados para comprar produtos ou serviços em outros locais).
 
 Se for absolutamente inviável usar 2FA sem Perguntas de Segurança, como no caso da Apple, no lugar das respostas, NÃO COLOQUE AS RESPOSTAS VERDADEIRAS. Use uma string aleatória (pode ser uma gerada pelo gerenciador de senhas). Assim, dá para evitar problemas maiores no futuro.
 
-
 #### Cartão de segurança/Grade de dados
 
 Aqui, você tem um cartão com algumas senhas (lembro de usar isso há alguns anos no Banco Bradesco) ou um papel com uma grade (usei essa técnica no LastPass por um tempo).
 
 A parte boa é que aquela grade é exclusivamente sua e é SUA responsabilidade cuidar desta folha/cartão. A parte ruim é que se você perder e não tiver um fallback, pode perder acesso completo à sua conta. Também, se você usar todas as combinações possíveis, é necessário conseguir um novo antes de fazer alguma nova operação, seja ela no banco ou em qualquer outro serviço.
-
 
 #### Senhas adicionais
 
@@ -95,7 +90,6 @@ Esta técnica é muito utilizada em bancos, onde você tem uma senha para entrar
 Ela é eficaz, porquê somente você tem acesso à essa senha (espero que isso seja verdade para você), e as transações somente são autorizadas se você digitar essa senha adicional, protegendo sua conta de fraudes.
 
 Na nossa vida digital, você pode usar [2FA de senha adicional no WhatsApp][senha-whatsapp] (faça isso, por favor, para seu próprio bem).
-
 
 #### Aplicativos de códigos OTP
 
@@ -107,10 +101,10 @@ O cuidado que você precisa ter aqui é: CONFIGURE UM FALLBACK! Isso garante que
 
 Se você possui uma conta Microsoft, recomendo que use a opção da Microsoft como app OTP para todos os outros serviços. Se não, pode usar qualquer um da lista indistintamente.
 
- * [Microsoft Authenticator][msauth]
- * [Google Authenticator][googleauth]
- * [LastPass Authenticator][lastpassauth]
- * [Authy][authy]
+* [Microsoft Authenticator][msauth]
+* [Google Authenticator][googleauth]
+* [LastPass Authenticator][lastpassauth]
+* [Authy][authy]
 
 ---
 Por fim, já falei por cima, reforço aqui: UTILIZEM UM FALLBACK. Fallback pode ser uma ligação, verificação por SMS, código por e-mail, códigos prévios que ficam na sua máquina/smartphone, senha adicional... Tenham alguma coisa, para evitar que você perca acesso à sua conta, sofrendo de lock-out.

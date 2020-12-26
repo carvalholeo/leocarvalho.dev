@@ -19,7 +19,6 @@ No artigo anterior dessa série, em que falei sobre [a importância de aprender 
 Então, pegando o exemplo dado naquele artigo, pensemos um pouco. A empresa de energia não sabe quantas tomadas tem no imóvel que vai entregar o ponto de eletricida; não sabe quantas ou onde estão as lâmpadas; não faz a menor ideia sobre os equipamentos que vão consumir energia naquele lugar. A responsabilidade dela é apenas instalar os fios no seu poste particular, entregar a tensão (voltagem) contratada, fornecer energia nos padrões aceitáveis segundo a legislação local e realizar a medição de consumo para posterior cobrança da utilização. Nada mais.
 
 Por outro lado, você também não tem noção de onde vem toda a energia consumida; não precisa saber quais são as matrizes energéticas até sua residência; não se preocupa com o tipo de fiação de alta tensão externa; pouco importa para você se tem uma subestação exclusiva para sua cidade ou se ela é compartilhada com outras. A sua responsabilidade é apenas instalar uma fiação adequada à legislação local, colocar pontos elétricos suficientes e bem dimensionados para o imóvel, instalar dispositivos de proteção contra raios e sobrecarga e fazer o pagamento pela utilização do serviço. Nada mais.
-
 *"Mas Léo, o que esse papo tem haver ORMs e programação??"*
 
 {{< iframe-youtube "https://www.youtube.com/embed/vSy-U2MUuOA" >}}
@@ -47,6 +46,7 @@ Apenas falar é fácil. Vou dar um exemplo usando o Eloquent, o ORM padrão do L
 -----
 
 No SQL:
+
 ```sql
 INSERT INTO 'usuarios' ('nome', 'cpf', 'email', 'usuario', 'senha', 'esta_ativo') VALUES ('Chapolin Colorado', '12345678901', 'chapolin@colorado.com', 'chapolin', 'minha-astucia', 1);
 ```
@@ -73,7 +73,6 @@ Tanto o exemplo em SQL quanto com Eloquent, vai gerar o mesmo resultado: salvar 
 Dessa forma, além de diminuir a barreira de entrada no mundo da programação, isolamos as responsabilidades e mantemos o código o mais limpo possível.
 
 É claro que nesse artigo não tenho a intenção de esgotar o assunto que, por si só daria uma série de tutoriais e explicações (talvez o faça no futuro). Mas estou abertos a feedbacks sobre esse assunto e como melhorar esse artigo :-)
-
 
 [framework]: /posts/preciso-realmente-aprender-linguagem-antes-framework/
 [crud]: http://devfuria.com.br/sql/mysql-crud/
