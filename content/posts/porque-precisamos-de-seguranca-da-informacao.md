@@ -1,18 +1,17 @@
 ---
-author: leo
-categories:
-- segurança
-- séries
-date: "2020-02-01T00:00:00Z"
-image: assets/images/cadeados.webp
-tags:
-- dicas
-- autenticação
-- dois fatores
-- lgpd
-- senhas
-- vazamentos
 title: Você tem certeza que está seguro na internet?
+date: '2020-02-01T00:00:00Z'
+categories:
+  - segurança
+  - séries
+tags:
+  - dicas
+  - autenticação
+  - dois fatores
+  - lgpd
+  - senhas
+  - vazamentos
+thumbnailImage: /images/uploads/cadeados.webp
 ---
 Já parou para pensar na quantidade de apps e sites em que você é cadastrado? Em quantos lugares você preenche um formulário para acessar as informações? Já pensou em como deve ser a estrutura desse banco de dados e se ele está criptografado? E se, de repente, esse cadastro fosse vazado e suas informações expostas?
 
