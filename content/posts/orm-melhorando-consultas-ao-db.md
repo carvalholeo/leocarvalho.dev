@@ -1,17 +1,16 @@
 ---
-author: leo
-categories:
-- Por onde começar
-date: "2020-03-08T00:00:00Z"
-image: assets/images/mapa.webp
-tags:
-- programacao
-- dicas
-- iniciantes
-- linguagens
-- frameworks
-- orm
 title: 'ORM: melhorando o jeito que você consulta seu banco de dados'
+date: '2020-03-08T00:00:00Z'
+categories:
+  - Por onde começar
+tags:
+  - programacao
+  - dicas
+  - iniciantes
+  - linguagens
+  - frameworks
+  - orm
+thumbnailImage: /images/uploads/mapa.webp
 ---
 No artigo anterior dessa série, em que falei sobre [a importância de aprender a linguagem antes do framework][framework], fiz uma analogia sobre como a companhia de luz entrega energia na residência. Partindo disso, quero falar hoje sobre o que é um ORM e sua importância para o desenvolvimento de software.
 
