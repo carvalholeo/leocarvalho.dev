@@ -35,7 +35,7 @@ Crie um database e coloque o nome dele dentro desse mesmo arquivo.
 
 Dê um clone no projeto, acessando o [repositório no GitHub](https://github.com/carvalholeo/biblioteca). Após, digite `npm install` no seu terminal, pra ele baixar as dependências. Em seguida, pra ele configurar o banco de dados, com o comando `npm run configurar`. Para este último comando é ESSENCIAL que você esteja com o seu servidor de banco de dados rodando.
 
-Por fim, basta digitar `npm start`, que você deve ver uma tabela, contendo 6 livros.
+Por fim, basta digitar `npm start`, e entrar no navegador, em <http://localhost:3000>, que você deve ver uma tabela, contendo 6 livros.
 
 ## Iniciando
 
@@ -97,3 +97,23 @@ module.exports = {
     }
 //restante do código
 ```
+
+Tem outros lugares que podemos fazer alterações, mas deixo esse desafio pra você fazer sozinho 🤭.
+
+Se tentarmos executar esse código agora, teremos dois problemas, um aparente e outro que é mais difícil de identificar numa primeira olhada.
+
+### Primeiro erro
+
+O primeiro, é porque, apesar de termos configurado o .env e alterado o knexfile.js, em nenhum momento do nosso código nós dissemos pro Node que os dados do .env deveriam ser usados em algum lugar. Isso deve ser feito no arquivo principal e que vai ser carregado de início no sistema. Por que? Para que todos os pontos do código que necessitem daquelas variáveis estejam com elas disponíveis. Não apenas a importação, como a execução da função devem ser executadas o mais breve possível no sistema.
+
+No nosso exemplo, apesar do servidor chamar o arquivo para o servidor diferente (`/bin/www`), dentro dele, o primeiro arquivo a ser chamado é o `app.js`. Sendo assim, é lá que faremos a importação/execução do dotenv.
+
+Posso (e vou) fazer isso desde a primeira linha, para garantir que nada possa interferir na execução desse código:
+
+```javascript
+const dotenv = require('dotenv');
+dotenv.config();
+//resto do arquivo app.js
+```
+
+Como o arquivo .env está na raiz do nosso projeto, nenhuma configuração ou opção adicional é necessária. Agora, se você voltar ao navegador o seu código deve continuar funcionando como antes, sem nenhuma alteração aparente. Mas agora a senha do banco de dados (e qualquer outra informação sensível) não está mais disponível no código, e sim em um arquivo que não está disponível aberto à todos.
