@@ -3,7 +3,7 @@ title: Usando variáveis de ambiente
 date: '2020-12-26T19:20:32-03:00'
 autoThumbnailImage: true
 thumbnailImagePosition: top
-coverImage: /images/uploads/cover-post.jpg
+coverImage: /images/uploads/variaveis-ambiente.webp
 ---
 Quando estamos aprendendo a programar, é muito comum (e até mesmo esperado) que configuremos senhas de bancos de dados e serviços diretamente no código, para facilitar a aprendizagem e testar se alguma hipótese é válida. Mas essas senhas e tokens não poderão ficar pra sempre no código.
 
