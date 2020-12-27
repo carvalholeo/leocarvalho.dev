@@ -140,3 +140,15 @@ const password = process.env.DB_PASSWORD || '';
 ```
 
 Qual a diferença? Agora, sempre que o Node não tiver as variáveis de ambiente dentro do obejto `process.env`, aqueles valores não serão nulos e não vai ter erro/exceção lançada como erro de sintaxe, mas sim de parâmetros incorretos, que facilita de sobremaneira na hora de executar processos de debug.
+
+_"Mas Léo, com isso não deixamos novamente senha fixa no código?"_
+
+Não, porque colocamos aqui valores padrão, iguais os que se tem no .env.example.
+
+_"Então por que temos o .env.example?"_
+
+Porquê lá ficam todas as variáveis espalhadas pelo sistema, enquanto o que acabamos de fazer é garantir que haja valores padrão para que, durante o processo de debug, você não fique procurando erros "inexistentes" em seu código.
+
+## Aviso
+
+No exemplo do projeto tem apenas variáveis do tipo `string`, então você não vai encontrar maiores dificuldades. No entanto, se você precisar os outros tipos primitivos do Javascript, como `Number` o
