@@ -55,7 +55,12 @@ Como o nome sugere, o .env.example é um arquivo que deve servir de exemplo, poi
 Crie um arquivo chamado `.env.example` na raiz do projeto e, em seguida, insira nele o seguinte conteúdo:
 
 ```
-NODE_ENV=developmentDB_CLIENT=mysqlDB_SCHEMA=bibliotecaDB_HOST=localhostDB_USERNAME=rootDB_PASSWORD=
+NODE_ENV=development
+DB_CLIENT=mysql
+DB_SCHEMA=biblioteca
+DB_HOST=localhost
+DB_USERNAME=root
+DB_PASSWORD=
 ```
 
 Para começar, fazemos uma cópia do .env.example e renomeamos para `.env`. Em seguida, fazemos as alterações para ter os dados reais do nosso ambiente.
@@ -69,9 +74,26 @@ Todas as variáveis de ambiente ficam dentro de `process.env` e podem ser buscad
 Vamos buscá-lo no arquivo `knexfile.js`. Antes da exportação padrão do objeto, vamos declarar algumas constantes:
 
 ```javascript
-const client = process.env.DB_CLIENT; // aqui vai o dialeto, o seu tipo de banco de dadosconst database = process.env.DB_SCHEMA //coloque aqui o nome do seu banco de dadosconst host = process.env.DB_HOST //o endereço do servidor, no meu exemplo, é localhostconst username = process.env.DB_USERNAME //o usuário do banco de dadosconst password = process.env.DB_PASSWORD //como o nome sugere, coloque a senha do usuário do banco de dados
+const client = process.env.DB_CLIENT; // aqui vai o dialeto, o seu tipo de banco de dados
+const database = process.env.DB_SCHEMA //coloque aqui o nome do seu banco de dados
+const host = process.env.DB_HOST //o endereço do servidor, no meu exemplo, é localhost
+const username = process.env.DB_USERNAME //o usuário do banco de dados
+const password = process.env.DB_PASSWORD //como o nome sugere, coloque a senha do usuário do banco de dados
 ```
 
 Caso troque o nome das variáveis dentro do .env, lembre-se de trocar em todos os pontos do sistema que fazem uso dele.
 
 Agora, tiramos os valores fixos de dentro do knexfile.js e colocamos as constantes que acabamos de declarar:
+
+```javascript
+module.exports = {
+  development: {
+    client: client,
+    connection: {
+      database: database,
+      host: host,
+      user: username,
+      password: password
+    }
+//restante do código
+```
