@@ -1,6 +1,6 @@
 ---
 title: Usando variáveis de ambiente
-date: '2020-12-27T07:20:32-03:00'
+date: '2020-12-27T03:42:32-03:00'
 categories:
   - Por onde começar
   - Segurança
