@@ -75,10 +75,10 @@ Vamos buscá-lo no arquivo `knexfile.js`. Antes da exportação padrão do objet
 
 ```javascript
 const client = process.env.DB_CLIENT; // aqui vai o dialeto, o seu tipo de banco de dados
-const database = process.env.DB_SCHEMA //coloque aqui o nome do seu banco de dados
-const host = process.env.DB_HOST //o endereço do servidor, no meu exemplo, é localhost
-const username = process.env.DB_USERNAME //o usuário do banco de dados
-const password = process.env.DB_PASSWORD //como o nome sugere, coloque a senha do usuário do banco de dados
+const database = process.env.DB_SCHEMA; //coloque aqui o nome do seu banco de dados
+const host = process.env.DB_HOST; //o endereço do servidor, no meu exemplo, é localhost
+const username = process.env.DB_USERNAME; //o usuário do banco de dados
+const password = process.env.DB_PASSWORD; //como o nome sugere, coloque a senha do usuário do banco de dados
 ```
 
 Caso troque o nome das variáveis dentro do .env, lembre-se de trocar em todos os pontos do sistema que fazem uso dele.
@@ -117,3 +117,26 @@ dotenv.config();
 ```
 
 Como o arquivo .env está na raiz do nosso projeto, nenhuma configuração ou opção adicional é necessária. Agora, se você voltar ao navegador o seu código deve continuar funcionando como antes, sem nenhuma alteração aparente. Mas agora a senha do banco de dados (e qualquer outra informação sensível) não está mais disponível no código, e sim em um arquivo que não está disponível aberto à todos.
+
+### Segundo erro
+
+Se você seguiu esse blog até agora, não deve ter ocorrido nenhum erro. No entanto, considere os seguintes cenários:
+
+* Ao recriar o ambiente, você esqueceu de criar o .env baseado no .env.example ou não personalizou ele;
+* Alguém da sua equipe não alterou uma das variáveis de ambiente ao executar o projeto;
+
+Por exemplo, do jeito que o projeto está atualmente, se nós não tivermos o .env no projeto, o erro que será lançado na sua cara será como se você não tivesse colocado passado os parâmetros.
+
+Esse tipo de erro só será aparente no futuro e, acredite em mim, ele é mais difícil de localizar. Então, como podemos evitar?
+
+Sabe as constantes que declaramos anteriormente no knexfile.js? Então, vamos fazer uma pequena alteração:
+
+```javascript
+const client = process.env.DB_CLIENT || 'mysql'; 
+const database = process.env.DB_SCHEMA || 'biblioteca';
+const host = process.env.DB_HOST || 'localhost'; 
+const username = process.env.DB_USERNAME || 'root'; 
+const password = process.env.DB_PASSWORD || '';
+```
+
+Qual a diferença? Agora, sempre que o Node não tiver as variáveis de ambiente dentro do obejto `process.env`, aqueles valores não serão nulos e não vai ter erro/exceção lançada como erro de sintaxe, mas sim de parâmetros incorretos, que facilita de sobremaneira na hora de executar processos de debug.
