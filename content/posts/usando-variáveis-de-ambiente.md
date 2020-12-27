@@ -151,4 +151,16 @@ Porquê lá ficam todas as variáveis espalhadas pelo sistema, enquanto o que ac
 
 ## Aviso
 
-No exemplo do projeto tem apenas variáveis do tipo `string`, então você não vai encontrar maiores dificuldades. No entanto, se você precisar os outros tipos primitivos do Javascript, como `Number` o
+No exemplo do projeto tem apenas variáveis do tipo `string`, então você não vai encontrar maiores dificuldades. No entanto, se você precisar os outros tipos primitivos do Javascript, como `Number` ou `Boolean`, você precisa fazer a conversão explicíta, já que quando o dotenv faz a importação das variáveis pra dentro do `process.env`, são todas colocadas como string. Tenha atenção nisso, para não causar bugs inesperados/inexplicáveis no sistema.
+
+## Conclusão
+
+O dotenv é um pacote opensource para ser usado com o Node.js. Mas também tem sua [versão para o PHP](https://packagist.org/packages/vlucas/phpdotenv), através do Packagist.
+
+Ele não é essencial para colocar variáveis dentro do processo do Node, apesar de ser o mais fácil. Dentro do sistema operacional, você pode colocar atráves do PATH e das variáveis de ambiente (nos três principais, Windows, Linux e MacOS), e pegar da mesma forma dentro do código.
+
+No Heroku, na área de configurações, você pode também inserir, uma por uma, cada variável, com seu respectivo valor.
+
+O que não falta são alternativas ao pacote para que você não precise deixar informações sensíveis do ambiente expostas ao mundo.
+
+Se você quiser ver o código final como ficou, no mesmo repositório tem uma branch chamada `variaveis`, contendo o código final do que concluímos aqui (e com a solução para o problema que propus para você resolver anteriormente. Basta dar um `git checkout variaveis`.
