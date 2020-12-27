@@ -1,6 +1,6 @@
 ---
 title: Usando variáveis de ambiente
-date: '2020-12-28T19:20:32-03:00'
+date: '2020-12-27T07:20:32-03:00'
 categories:
   - Por onde começar
   - Segurança
@@ -54,7 +54,7 @@ Como o nome sugere, o .env.example é um arquivo que deve servir de exemplo, poi
 
 Crie um arquivo chamado `.env.example` na raiz do projeto e, em seguida, insira nele o seguinte conteúdo:
 
-```
+```text
 NODE_ENV=development
 DB_CLIENT=mysql
 DB_SCHEMA=biblioteca
@@ -132,10 +132,10 @@ Esse tipo de erro só será aparente no futuro e, acredite em mim, ele é mais d
 Sabe as constantes que declaramos anteriormente no knexfile.js? Então, vamos fazer uma pequena alteração:
 
 ```javascript
-const client = process.env.DB_CLIENT || 'mysql'; 
+const client = process.env.DB_CLIENT || 'mysql';
 const database = process.env.DB_SCHEMA || 'biblioteca';
-const host = process.env.DB_HOST || 'localhost'; 
-const username = process.env.DB_USERNAME || 'root'; 
+const host = process.env.DB_HOST || 'localhost';
+const username = process.env.DB_USERNAME || 'root';
 const password = process.env.DB_PASSWORD || '';
 ```
 
