@@ -31,6 +31,12 @@ buildDrafts = false
 buildFuture = true
 enableRobotsTXT = true
 
+[utterances]
+  repo = "carvalholeo/leocarvalho.dev"
+  issueTerm = "title"
+  label = ""
+  theme = "preferred-color-scheme"
+
 [[social]]
   name = "Blog Técnico"
   icon = "fa fa-file-text fa-3x"

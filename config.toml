@@ -11,8 +11,6 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "leocarvalho"
-
 googleAnalytics = "UA-139872605-3"
 
 [privacy]
