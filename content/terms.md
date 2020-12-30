@@ -5,7 +5,7 @@ draft: false
 ---
 Nesta página, você encontrará os links para as regras que regem todos pontos de contato entre mim e você, seja aqui no blog, em qualquer outro subdomínio ou em redes sociais.
 
-Por favor, note que estas pdoem ser atualizadas periodicamente e é seu dever, enquanto usuário de qualquer um dos sites sob minha gestão direta, olhar estas políticas e termos periodicamente.
+Por favor, note que estas podem ser atualizadas periodicamente e é seu dever, enquanto usuário de qualquer um dos sites sob minha gestão direta, olhar estas políticas e termos periodicamente.
 
 Se você não concorda com algum dos termos, por gentileza, não interaja com nada no site. Se tiver dúvidas, peço que [entre contato comigo aqui][contact].
 
