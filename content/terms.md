@@ -16,7 +16,6 @@ Sem mais delongas, aqui estão os links para acesso.
 * [Política de comentários][comentarios]
 * [Código de ética e conduta nas redes sociais][etica]
 
-
 [contact]: mailto:leo@leocarvalho.dev
 [termos]: /tos
 [privacidade]: /privacy-policy
