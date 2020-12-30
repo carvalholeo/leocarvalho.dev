@@ -16,3 +16,8 @@ title = "Léo Carvalho"
     name = "Blog"
     weight = 2.0
     url = "/posts/"
+
+[[menu.main]]
+    name = "Termos"
+    weight = 1.5
+    url = "/terms/"
