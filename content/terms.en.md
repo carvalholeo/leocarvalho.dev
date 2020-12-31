@@ -20,6 +20,6 @@ And now, here are the links to access.
 
 [contact]: mailto:leo@leocarvalho.dev
 [termos]: /en/tos
-[privacidade]: /privacy-policy
+[privacidade]: /en/privacy-policy
 [comentarios]: /comments
 [etica]: https://github.com/brazil-it-groups/code-of-conduct/blob/master/README.md
