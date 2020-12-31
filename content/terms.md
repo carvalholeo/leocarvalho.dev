@@ -9,6 +9,8 @@ Por favor, note que estas podem ser atualizadas periodicamente e é seu dever, e
 
 Se você não concorda com algum dos termos, por gentileza, não interaja com nada no site. Se tiver dúvidas, peço que [entre contato comigo aqui][contact].
 
+{{< license >}}
+
 Sem mais delongas, aqui estão os links para acesso.
 
 * [Termos de uso][termos]

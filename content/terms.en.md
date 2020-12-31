@@ -9,6 +9,8 @@ Please, note that these pages could be updated periodically, and it's in your ac
 
 If you don't agree with some of these terms, please, don't interact with anything at this site. If you have some questions, please, [get me in touch here][contact].
 
+{{< license-en >}}
+
 And now, here are the links to access.
 
 * [Terms of service][termos]
