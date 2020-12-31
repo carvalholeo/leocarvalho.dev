@@ -25,7 +25,7 @@ rtl = false
 
 math = true
 customCSS = ["assets/css/theme.css"]
-customJS = ["assets/js/twemoji.min.js"]
+customJS = ["assets/js/twemoji.min.js", "assets/js/addToAny.js"]
 
 buildDrafts = false
 buildFuture = true
