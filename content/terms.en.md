@@ -17,7 +17,7 @@ And now, here are the links to access.
 * [Code of ethics and conduct at social network][etica]
 
 [contact]: mailto:leo@leocarvalho.dev
-[termos]: /tos
+[termos]: /en/tos
 [privacidade]: /privacy-policy
 [comentarios]: /comments
 [etica]: https://github.com/brazil-it-groups/code-of-conduct/blob/master/README.md
