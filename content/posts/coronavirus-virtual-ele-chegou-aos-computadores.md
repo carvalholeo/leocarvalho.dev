@@ -15,7 +15,7 @@ thumbnailImage: /images/uploads/coronavirus.webp
 ---
 Enquanto o mundo está observando atentamente ao surto do COVID-19, popularmente conhecido como Coronavírus, podemos ver um outro tipo de ameaça surgindo entre nós: o Coronavírus virtual.
 
-Se você esteve hibernando nos últimos dias, aqui vai uma explicação rápida. O COVID-19 faz parte de uma família de vírus chamados coronavírus, que tem esse nome devido à sua forma parecer com uma coroa. É uma doença respiratória, que já teve surtos anteriores: o [Sars][sars], em 2002, e o [Mers](mers), em 2014. Este vírus, que tem como epicentro a cidade de Wuhan, na China, teve seu [primeiro caso notificado à OMS][cronologia] (Organização Mundial de Saúde) em 31/12/2019. Em 30/01/2020, 30 dias após a notificação do primeiro caso, a OMS declarou [estado de emergência global em razão do COVID-19][estado-emergencia].
+Se você esteve hibernando nos últimos dias, aqui vai uma explicação rápida. O COVID-19 faz parte de uma família de vírus chamados coronavírus, que tem esse nome devido à sua forma parecer com uma coroa. É uma doença respiratória, que já teve surtos anteriores: o [Sars][sars], em 2002, e o [Mers][mers], em 2014. Este vírus, que tem como epicentro a cidade de Wuhan, na China, teve seu [primeiro caso notificado à OMS][cronologia] (Organização Mundial de Saúde) em 31/12/2019. Em 30/01/2020, 30 dias após a notificação do primeiro caso, a OMS declarou [estado de emergência global em razão do COVID-19][estado-emergencia].
 
 Tendo dito isto, podemos avançar e entender do que se trata esse artigo.
 
