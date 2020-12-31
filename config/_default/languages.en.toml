@@ -12,3 +12,8 @@ keywords = "leo carvalho, c# developer, node developer, node.js developer, php d
   name = "About me"
   weight = 1.0
   url = "/about/"
+
+[[menu.main]]
+    name = "Legal"
+    weight = 1.5
+    url = "/terms/"
