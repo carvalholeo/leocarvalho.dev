@@ -39,3 +39,5 @@ Em sua implementação, o DNT tem três valores possíveis:
 * **0** (zero/false): indica que o usuário PERMITE o rastreamento, e os cookies de personalização podem ser usados à vontade;
 * **1** (um/true): indica que o usuário NÃO PERMITE o rastreamento, e os cookies não devem ser colocados no dispositivo do mesmo;
 * **null**: indica que nenhuma preferência foi expressa pelo usuário. De acordo com as leis atuais, você deve entender isso como se o usuário NÃO PERMITISSE os cookies personalizados.
+
+De acordo com o '[Can I Use?](https://caniuse.com/?search=do%20not%20tr)', os diferentes navegadores implementam o DNT de forma diferente entre si. E não vamos fazer vários blocos `if` ou `switch/case` para verificar cada um deles.
