@@ -31,3 +31,11 @@ E não, porque você precisa confirmar, via código, que o navegador do usuário
 Existem algumas formas de você tratar a privacidade do usuário. Nesse artigo, vamos falar sobre o [Do Not Track](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT). Em breve, pretendo escrever sobre o [Tk](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Tk).
 
 ## Entendendo o Do Not Track
+
+O "Do Not Track" (DNT) é um cabeçalho de requisição, disponível no navegador do usuário. Para acessá-lo, usamos o objeto global _navigator_, que tem todas as propriedades do navegador.
+
+Em sua implementação, o DNT tem três valores possíveis:
+
+* **0** (zero/false): indica que o usuário PERMITE o rastreamento, e os cookies de personalização podem ser usados à vontade;
+* **1** (um/true): indica que o usuário NÃO PERMITE o rastreamento, e os cookies não devem ser colocados no dispositivo do mesmo;
+* **null**: indica que nenhuma preferência foi expressa pelo usuário. De acordo com as leis atuais, você deve entender isso como se o usuário NÃO PERMITISSE os cookies personalizados.
