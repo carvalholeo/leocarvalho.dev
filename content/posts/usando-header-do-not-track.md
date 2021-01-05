@@ -16,4 +16,18 @@ coverImage: /images/uploads/privacy.jpg
 ---
 Estamos na era dos dados. Eles são considerados o [novo petróleo](https://cio.com.br/tendencias/se-os-dados-sao-o-novo-petroleo-o-que-voce-esta-fazendo-com-sua-fonte-de-riqueza), o [ouro digital](https://tiinside.com.br/17/07/2019/o-ouro-da-era-digital-os-dados/). Basta dar uma olhada mais com mais rigor no que é carregado pelos sites para fazer rastreamento.
 
-No entanto, também estamos na era da proteção dos dados. No Brasil, está em vigor a [LGPD](https://www.lgpdbrasil.com.br/) (Lei Geral de Proteção de Dados), assim como outros dispositivos legais. Já na Europa, há a [GDPR](https://gdpr-info.eu/) (General Data Protection Regulation - Regulamento Geral sobre a Proteção de Dados), bem como a [CCPA](https://oag.ca.gov/privacy/ccpa) (California Consumer Privacy Act - Lei de Privacidade do Consumidor da Califórnia), do estado americano da Califórnia. Estes têm um objetivo em comum: dar ao usuário o poder de proteger seus dados pessoais.
+No entanto, também estamos na era da proteção dos dados. No Brasil, está em vigor a [LGPD](https://www.lgpdbrasil.com.br/) (Lei Geral de Proteção de Dados), assim como outros dispositivos legais. Já na Europa, há a [GDPR](https://gdpr-info.eu/) (General Data Protection Regulation — Regulamento Geral sobre a Proteção de Dados), bem como a [CCPA](https://oag.ca.gov/privacy/ccpa) (California Consumer Privacy Act — Lei de Privacidade do Consumidor da Califórnia), do estado americano da Califórnia. Estes têm um objetivo em comum: dar ao usuário o poder de proteger seus dados pessoais.
+
+Por isso, é essencial (ética e legalmente falando) que o usuário seja informado sobre o que você está fazendo no dispositivo dele e PEÇA autorização.
+
+> "Mas Léo, não basta colocar um modal na tela pedindo pra ele confirmar os cookies?"
+
+Sim e não.
+
+Sim, porque você precisa avisá-lo disso. Como desenvolvedor, você não pode sair colocando cookies e armazenando dados se o usuário não permitir. E a responsabilidade de indicar que o usuário te autorizou é sua: você que precisa provar isso, não o usuário provar que não permitiu (presume-se que ele não autorizou nada, já que a LGPD determina que todas as configurações de privacidade venham habilitadas por padrão).
+
+E não, porque você precisa confirmar, via código, que o navegador do usuário, se ele deseja ser rastreado ou não e, somente após isso, verificar se pode ou não ter permissão de rastrear o usuário.
+
+Dito isso, vamos ao código.
+
+## Entendendo o Do Not Track
