@@ -9,6 +9,12 @@ tags:
   - don't track
   - dnt
   - tutorial
+keywords:
+  - dnt
+  - privacidade
+  - lgpd
+  - tutorial
+  - ''
 autoThumbnailImage: false
 thumbnailImagePosition: right
 thumbnailImage: /images/uploads/privacy.jpg
@@ -74,21 +80,17 @@ Até aqui, já temos um código funcional para tratar do DNT. Agora vamos descer
 
 ## Gerenciando o DNT
 
-Pensando na legislação (e também na experiência), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas. Não vou entrar nos pormenores da implementação dela. Se você quiser saber mais, deixa aqui nos comentários.
+Pensando na legislação (e também na experiência), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas. Não vou entrar nos pormenores da implementação dela. Se você quiser ter mais detalhes do que cada coisa faz, deixa nos comentários (necessário ter conta no GitHub).
 
 ```javascript
 class DoNotTrack {
   constructor() {
-    this.doNotTrack = this.getDoNotTrackFromBrowser();
+    this.doNotTrack = (this.#getLocalStorage() || this.getDoNotTrackFromBrowser());
     this.dnt = this.isDntActive();
   }
 
   getDoNotTrackFromBrowser() {
     return (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack) ?? "1";
-  }
-
-  setDoNotTrackFromBrowser() {
-    this.doNotTrack = this.getDoNotTrackFromBrowser();
   }
 
   isDntActive() {
@@ -125,4 +127,13 @@ class DoNotTrack {
 }
 ```
 
-Num resumo, com o código acima agora nós temos a verificação do DNT e guardamos esse valor dentro do LocalStorage, para não precisarmos verificar diretamente o cabeçalho a cada nova renderização do HTML. Agora basta usar o método `isDntActive()` para saber se o
+Num resumo, com o código acima agora nós temos a verificação do DNT e guardamos esse valor dentro do LocalStorage, para não precisarmos verificar diretamente o cabeçalho a cada nova renderização do HTML.
+
+1. No `constructor`, são inicializadas as propriedades padrão para a Classe.
+2. O método `getDoNotTrackFromBrowser` pega o cabeçalho de dentro do objeto _navigator_.
+3. Na função `isDndActive`, podemos saber se o usuário ativou ou não o DNT.
+4. Em `grantPermission`, o usuário desativa o DNT no seu site e permite que seja rastreado.
+5. Já em `revokePermission`, a permissão ativa é revogada e o usuário deixa claro que não quer ser rastreado.
+6. Os métodos `#setLocalStorage` e `#getLocalStorage` são privados, usados apenas internamente pela classe e responsáveis por guardar o estado do DNT no LocalStorage do navegador.
+
+Assim, podemos separar bem as responsabilidades e podemos consultar, de forma centralizada, o status do DNT do resto do seu código, onde ficam os trackers e anúncios.
