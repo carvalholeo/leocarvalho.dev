@@ -1,6 +1,6 @@
 ---
 title: Usando a diretiva Do Not Track
-date: '2021-01-04T19:08:07-03:00'
+date: '2021-01-05T03:53:00-03:00'
 categories:
   - Privacidade
   - Segurança
