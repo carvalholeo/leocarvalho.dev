@@ -40,4 +40,15 @@ Em sua implementação, o DNT tem três valores possíveis:
 * **1** (um/true): indica que o usuário NÃO PERMITE o rastreamento, e os cookies não devem ser colocados no dispositivo do mesmo;
 * **null**: indica que nenhuma preferência foi expressa pelo usuário. De acordo com as leis atuais, você deve entender isso como se o usuário NÃO PERMITISSE os cookies personalizados.
 
-De acordo com o '[Can I Use?](https://caniuse.com/?search=do%20not%20tr)', os diferentes navegadores implementam o DNT de forma diferente entre si. E não vamos fazer vários blocos `if` ou `switch/case` para verificar cada um deles.
+Implementando o DNT
+
+De acordo com o '[Can I Use?](https://caniuse.com/?search=do%20not%20tr)', os diferentes navegadores implementam o DNT de forma diferente entre si. E não vamos fazer vários blocos `if` ou `switch/case` para verificar cada um deles. Outro ponto a se observar é a falta de suporte do Safari ao DNT, desde a versão 12.1 até as mais atuais.
+
+Sabendo-se que há diferentes implementações entre os browsers, podemos, então, usar lógica booleana para que cada uma dos padrões adotados possam ser verificados, um por um.
+
+```javascript
+const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack) ?? 1;
+```
+
+1. Na condição `navigator.doNotTrack`, o JavaScript está procurando pela implementação padrão, com o objeto _navigator_.
+2. Já em
