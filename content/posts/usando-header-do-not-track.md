@@ -28,6 +28,6 @@ Sim, porque você precisa avisá-lo disso. Como desenvolvedor, você não pode s
 
 E não, porque você precisa confirmar, via código, que o navegador do usuário, se ele deseja ser rastreado ou não e, somente após isso, verificar se pode ou não ter permissão de rastrear o usuário.
 
-Dito isso, vamos ao código.
+Existem algumas formas de você tratar a privacidade do usuário. Nesse artigo, vamos falar sobre o [Do Not Track](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT). Em breve, pretendo escrever sobre o [Tk](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Tk).
 
 ## Entendendo o Do Not Track
