@@ -4,11 +4,12 @@ date: '2021-01-04T19:08:07-03:00'
 categories:
   - Privacidade
   - Segurança
+  - Front-end
 tags:
-  - do not track
-  - don't track
   - dnt
   - tutorial
+  - código
+  - javascript
 keywords:
   - dnt
   - privacidade
@@ -19,6 +20,15 @@ keywords:
   - analytics
   - trackers
   - pixel
+  - do not track
+  - don't track
+  - front-end
+  - javascript
+  - js
+  - navegador
+  - w3c
+  - mdn
+  - browser
 autoThumbnailImage: false
 thumbnailImagePosition: right
 thumbnailImage: /images/uploads/privacy.jpg
