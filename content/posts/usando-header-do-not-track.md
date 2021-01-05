@@ -14,7 +14,11 @@ keywords:
   - privacidade
   - lgpd
   - tutorial
-  - ''
+  - autorizacaoo
+  - anuncios
+  - analytics
+  - trackers
+  - pixel
 autoThumbnailImage: false
 thumbnailImagePosition: right
 thumbnailImage: /images/uploads/privacy.jpg
@@ -50,7 +54,7 @@ Implementando o DNT
 
 De acordo com o '[Can I Use?](https://caniuse.com/?search=do%20not%20tr)', os diferentes navegadores implementam o DNT de forma diferente entre si. E não vamos fazer vários blocos `if` ou `switch/case` para verificar cada um deles. Outro ponto a se observar é a falta de suporte do Safari ao DNT, desde a versão 12.1 até as mais atuais.
 
-Sabendo-se que há diferentes implementações entre os browsers, podemos, então, usar lógica booleana para que cada uma dos padrões adotados possam ser verificados, um por um.
+Sabendo-se que há diferentes implementações entre os browsers, podemos, então, usar lógica booliana para que cada uma dos padrões adotados possam ser verificados, um por um.
 
 ```javascript
 const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack) ?? "1";
@@ -60,18 +64,18 @@ const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack
 2. Já em `window.doNotTrack` e `navigator.msDoNotTrack`, procura-se pelo DNT nas implementações fora do padrão do W3C e da MDN.
 3. Por fim, o `?? "1"` é o operador que garante que, se nada der certo, você ainda tem a privacidade protegida, já que "ativa" o DNT. E sim, ele fica como string, já que esse é o padrão.
 
-Para poder usar em validações de função ou `if`, vamos, mais uma vez recorrer à lógica booleana para gravar em uma variável. Isso acontece porque, mais uma vez, há diferentes implementações do que deveria ser um padrão.
+Para poder usar em validações de função ou `if`, vamos, mais uma vez recorrer à lógica booliana para gravar em uma variável. Isso acontece porque, mais uma vez, há diferentes implementações do que deveria ser um padrão.
 
 ```javascript
 const doNotTrack = (dnt === "1" || dnt === "yes") ?? true;
 ```
 
-Nesse caso, ele faz a comparação nos parênteses e retorna um booleano. Caso haja qualquer falha nessa verificação, vai cair no true por padrão. O primeiro, `dnt === "1"` é a validação do padrão. Já o segundo, `dnt === "yes"` confirma se no Firefox (que usa "yes" e "no") está assim. Se nenhum dos dois for possível de confirmar, lembre-se que estamos falando de respeitar a privacidade do usuário e de cumprir a Lei: dizemos que será `true`.
+Nesse caso, ele faz a comparação nos parênteses e retorna um booliano. Caso haja qualquer falha nessa verificação, vai cair no true por padrão. O primeiro, `dnt === "1"` é a validação do padrão. Já o segundo, `dnt === "yes"` confirma se no Firefox (que usa "yes" e "no") está assim. Se nenhum dos dois for possível de confirmar, lembre-se que estamos falando de respeitar a privacidade do usuário e de cumprir a Lei: dizemos que será `true`.
 
-Agora basta fazer um if, onde colocamos o nosso código que terá o rastreamento liberado.
+Agora basta fazer um`if`, onde colocamos o nosso código que terá o rastreamento liberado.
 
 ```javascript
-if (doNotTrack) {
+if (!doNotTrack) {
     //código aqui
 }
 ```
@@ -80,7 +84,7 @@ Até aqui, já temos um código funcional para tratar do DNT. Agora vamos descer
 
 ## Gerenciando o DNT
 
-Pensando na legislação (e também na experiência), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas. Não vou entrar nos pormenores da implementação dela. Se você quiser ter mais detalhes do que cada coisa faz, deixa nos comentários (necessário ter conta no GitHub).
+Pensando na legislação (e também na experiência do usuário), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas. Não vou entrar nos pormenores da implementação dela. Se você quiser ter mais detalhes do que cada coisa faz, deixa nos comentários (necessário ter conta no GitHub).
 
 ```javascript
 class DoNotTrack {
@@ -100,9 +104,6 @@ class DoNotTrack {
   grantPermission() {
     this.dnt = 0;
     this.#setLocalStorage();
-    navigator.doNotTrack = "0";
-    window.doNotTrack = "0";
-    navigator.msDoNotTrack = "0";
 
     return this.#getLocalStorage();
   }
@@ -110,9 +111,6 @@ class DoNotTrack {
   revokePermission() {
     this.dnt = 1;
     this.#setLocalStorage();
-    navigator.doNotTrack = "1";
-    window.doNotTrack = "1";
-    navigator.msDoNotTrack = "1";
 
     return this.#getLocalStorage();
   }
@@ -136,4 +134,30 @@ Num resumo, com o código acima agora nós temos a verificação do DNT e guarda
 5. Já em `revokePermission`, a permissão ativa é revogada e o usuário deixa claro que não quer ser rastreado.
 6. Os métodos `#setLocalStorage` e `#getLocalStorage` são privados, usados apenas internamente pela classe e responsáveis por guardar o estado do DNT no LocalStorage do navegador.
 
+## Uso prático
+
 Assim, podemos separar bem as responsabilidades e podemos consultar, de forma centralizada, o status do DNT do resto do seu código, onde ficam os trackers e anúncios.
+
+```javascript
+const dnt = new DoNotTrack(); //inicializa a classe
+console.log(dnt); // mostra os valores iniciais
+dnt.grantPermission(); //desativa o DNT para você, apenas, e retorna false
+dnt.revokePermission(); // ativa o DNT para você e retorna true
+dnt.isDntActive(); // função que retorna um booliano sobre o status atual do DNT
+```
+
+Sabendo-se que `dnt.isDntActive()` retorna `true/false`, basta usá-lo num `if`, em que dentro ficará o seu código de Analytics, Pixel e Ads.
+
+```javascript
+if (!dnt.isDntActive()) {    //códigos de rastreamento variados aqui}
+```
+
+Você deve ter percebido que fiz, tanto no exemplo procedural, quanto no orientado a objetos, um `if` com negação. Isso acontece porquê quando o DNT está ativado, o método `isDntActive` vai retornar `true` (indicando que o usuário não permite o rastreamento). Já quando o usuário permitir o rastreamento, o DNT estará desativado, e `isDntActive` vai retornar `false`, indicando que o usuário permite o rastreio. 
+
+Se não fosse feita a negação, o `if` e o rastreamento iriam funcionar normalmente no momento em que o usuário não permite, e não o faria quando o usuário tivesse dado a autorização.
+
+## Conclusão
+
+A partir de agora, fica muito mais simples, prático e centralizada a gestão do DNT, garantindo que você, desenvolvedor, possa dar ao seu usuário, um controle, ainda muito rudimentar, sobre trackers e anúncios personalizados.
+
+Me diz, o que você achou desse artigo? Comenta aí!
