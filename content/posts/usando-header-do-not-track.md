@@ -90,7 +90,7 @@ if (!doNotTrack) {
 }
 ```
 
-Até aqui, já temos um código funcional para tratar do DNT. Agora vamos descer um pouco o nível.
+Até aqui, já temos um código funcional para tratar do DNT. Agora vamos descer um pouco o nível e melhorar esse código.
 
 ## Gerenciando o DNT
 
