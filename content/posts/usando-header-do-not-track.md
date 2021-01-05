@@ -47,8 +47,17 @@ De acordo com o '[Can I Use?](https://caniuse.com/?search=do%20not%20tr)', os di
 Sabendo-se que há diferentes implementações entre os browsers, podemos, então, usar lógica booleana para que cada uma dos padrões adotados possam ser verificados, um por um.
 
 ```javascript
-const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack) ?? 1;
+const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack) ?? "1";
 ```
 
 1. Na condição `navigator.doNotTrack`, o JavaScript está procurando pela implementação padrão, com o objeto _navigator_.
-2. Já em
+2. Já em `window.doNotTrack` e `navigator.msDoNotTrack`, procura-se pelo DNT nas implementações fora do padrão do W3C e da MDN.
+3. Por fim, o `?? "1"` é o operador que garante que, se nada der certo, você ainda tem a privacidade protegida, já que "ativa" o DNT. E sim, ele fica como string, já que esse é o padrão.
+
+Para poder usar em validações de função ou `if`, vamos, mais uma vez recorrer à lógica booleana para gravar em uma variável. Isso acontece porque, mais uma vez, há diferentes implementações do que deveria ser um padrão.
+
+```javascript
+const doNotTrack = (dnt === "1" || dnt === "yes") ?? true;
+```
+
+Nesse caso, ele faz a comparação nos parênteses e retorna um booleano. Caso haja qualquer falha nessa verificação, vai cair no true por padrão. O primeiro, `dnt === "1"` é a validação do padrão. Já o segundo, `dnt === "yes"` confirma se no Firefox (que usa "yes" e "no") está assim. Se nenhum dos dois for possível de confirmar, lembre-se que estamos falando de respeitar a privacidade do usuário e de cumprir a Lei: dizemos que será `true`.
