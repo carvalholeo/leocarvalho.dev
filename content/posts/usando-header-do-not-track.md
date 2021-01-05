@@ -1,5 +1,5 @@
 ---
-title: Usando Header Do Not Track
+title: Usando a diretiva Do Not Track
 date: '2021-01-04T19:08:07-03:00'
 categories:
   - Privacidade
