@@ -64,7 +64,7 @@ Implementando o DNT
 
 De acordo com o '[Can I Use?](https://caniuse.com/?search=do%20not%20tr)', os diferentes navegadores implementam o DNT de forma diferente entre si. E não vamos fazer vários blocos `if` ou `switch/case` para verificar cada um deles. Outro ponto a se observar é a falta de suporte do Safari ao DNT, desde a versão 12.1 até as mais atuais.
 
-Sabendo-se que há diferentes implementações entre os browsers, podemos, então, usar lógica booliana para que cada uma dos padrões adotados possam ser verificados, um por um.
+Sabendo-se que há diferentes implementações entre os browsers, podemos, então, usar lógica booliana para que cada um dos padrões adotados possam ser verificados, um por um.
 
 ```javascript
 const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack) ?? "1";
@@ -82,7 +82,7 @@ const doNotTrack = (dnt === "1" || dnt === "yes") ?? true;
 
 Nesse caso, ele faz a comparação nos parênteses e retorna um booliano. Caso haja qualquer falha nessa verificação, vai cair no true por padrão. O primeiro, `dnt === "1"` é a validação do padrão. Já o segundo, `dnt === "yes"` confirma se no Firefox (que usa "yes" e "no") está assim. Se nenhum dos dois for possível de confirmar, lembre-se que estamos falando de respeitar a privacidade do usuário e de cumprir a Lei: dizemos que será `true`.
 
-Agora basta fazer um`if`, onde colocamos o nosso código que terá o rastreamento liberado.
+Agora basta fazer um `if`, onde colocamos o nosso código que terá o rastreamento liberado.
 
 ```javascript
 if (!doNotTrack) {
@@ -94,7 +94,7 @@ Até aqui, já temos um código funcional para tratar do DNT. Agora vamos descer
 
 ## Gerenciando o DNT
 
-Pensando na legislação (e também na experiência do usuário), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas. Não vou entrar nos pormenores da implementação dela. Se você quiser ter mais detalhes do que cada coisa faz, deixa nos comentários (necessário ter conta no GitHub).
+Pensando na legislação (e na experiência do usuário), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas. Não vou entrar nos pormenores da implementação dela. Se você quiser ter mais detalhes do que cada coisa faz, deixa nos comentários (necessário ter conta no GitHub).
 
 ```javascript
 class DoNotTrack {
@@ -139,7 +139,7 @@ Num resumo, com o código acima agora nós temos a verificação do DNT e guarda
 
 1. No `constructor`, são inicializadas as propriedades padrão para a Classe.
 2. O método `getDoNotTrackFromBrowser` pega o cabeçalho de dentro do objeto _navigator_.
-3. Na função `isDndActive`, podemos saber se o usuário ativou ou não o DNT.
+3. Na função `isDntActive`, podemos saber se o usuário ativou ou não o DNT.
 4. Em `grantPermission`, o usuário desativa o DNT no seu site e permite que seja rastreado.
 5. Já em `revokePermission`, a permissão ativa é revogada e o usuário deixa claro que não quer ser rastreado.
 6. Os métodos `#setLocalStorage` e `#getLocalStorage` são privados, usados apenas internamente pela classe e responsáveis por guardar o estado do DNT no LocalStorage do navegador.
@@ -159,12 +159,14 @@ dnt.isDntActive(); // função que retorna um booliano sobre o status atual do D
 Sabendo-se que `dnt.isDntActive()` retorna `true/false`, basta usá-lo num `if`, em que dentro ficará o seu código de Analytics, Pixel e Ads.
 
 ```javascript
-if (!dnt.isDntActive()) {    //códigos de rastreamento variados aqui}
+if (!dnt.isDntActive()) {
+    //códigos de rastreamento variados aqui
+}
 ```
 
-Você deve ter percebido que fiz, tanto no exemplo procedural, quanto no orientado a objetos, um `if` com negação. Isso acontece porquê quando o DNT está ativado, o método `isDntActive` vai retornar `true` (indicando que o usuário não permite o rastreamento). Já quando o usuário permitir o rastreamento, o DNT estará desativado, e `isDntActive` vai retornar `false`, indicando que o usuário permite o rastreio. 
+Você deve ter percebido que fiz, tanto no exemplo procedural, quanto no orientado a objetos, um `if` com negação. Isso acontece porque quando o DNT está ativado, o método `isDntActive` vai retornar `true` (indicando que o usuário não permite o rastreamento). Já quando o usuário permitir o rastreamento, o DNT estará desativado, e `isDntActive` vai retornar `false`, indicando que o usuário permite o rastreio. 
 
-Se não fosse feita a negação, o `if` e o rastreamento iriam funcionar normalmente no momento em que o usuário não permite, e não o faria quando o usuário tivesse dado a autorização.
+Se não fosse feita a negação, o `if` e o rastreamento iriam funcionar normalmente quando o usuário não permite, e não o faria quando o usuário tivesse dado a autorização.
 
 ## Conclusão
 
