@@ -28,7 +28,7 @@ Sim, porque você precisa avisá-lo disso. Como desenvolvedor, você não pode s
 
 E não, porque você precisa confirmar, via código, que o navegador do usuário, se ele deseja ser rastreado ou não e, somente após isso, verificar se pode ou não ter permissão de rastrear o usuário.
 
-Existem algumas formas de você tratar a privacidade do usuário. Nesse artigo, vamos falar sobre o [Do Not Track](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT). Em breve, pretendo escrever sobre o [Tk](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Tk).
+Existem algumas formas de você tratar a privacidade do usuário. Nesse artigo, vamos falar sobre o [Do Not Track](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT). Em breve, pretendo escrever sobre o [Tk](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Tk). Ao final dele, teremos uma classe com tudo que precisamos para fazer o gerenciamento do 'Do Not Track'.
 
 ## Entendendo o Do Not Track
 
@@ -61,3 +61,21 @@ const doNotTrack = (dnt === "1" || dnt === "yes") ?? true;
 ```
 
 Nesse caso, ele faz a comparação nos parênteses e retorna um booleano. Caso haja qualquer falha nessa verificação, vai cair no true por padrão. O primeiro, `dnt === "1"` é a validação do padrão. Já o segundo, `dnt === "yes"` confirma se no Firefox (que usa "yes" e "no") está assim. Se nenhum dos dois for possível de confirmar, lembre-se que estamos falando de respeitar a privacidade do usuário e de cumprir a Lei: dizemos que será `true`.
+
+Agora basta fazer um if, onde colocamos o nosso código que terá o rastreamento liberado.
+
+```javascript
+if (doNotTrack) {
+    //código aqui
+}
+```
+
+Até aqui, já temos um código funcional para tratar do DNT. Agora vamos descer um pouco o nível.
+
+## Gerenciando o DNT
+
+Pensando na legislação (e também na experiência), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas.
+
+```
+class DoNotTrack {    }
+```
