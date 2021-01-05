@@ -74,8 +74,55 @@ Até aqui, já temos um código funcional para tratar do DNT. Agora vamos descer
 
 ## Gerenciando o DNT
 
-Pensando na legislação (e também na experiência), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas.
+Pensando na legislação (e também na experiência), o usuário deve ser capaz de dar/revogar essa permissão. Para isso, vamos criar uma classe para trabalhar com todos esses aspectos e também para deixar as funções bem separadas. Não vou entrar nos pormenores da implementação dela. Se você quiser saber mais, deixa aqui nos comentários.
 
+```javascript
+class DoNotTrack {
+  constructor() {
+    this.doNotTrack = this.getDoNotTrackFromBrowser();
+    this.dnt = this.isDntActive();
+  }
+
+  getDoNotTrackFromBrowser() {
+    return (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack) ?? "1";
+  }
+
+  setDoNotTrackFromBrowser() {
+    this.doNotTrack = this.getDoNotTrackFromBrowser();
+  }
+
+  isDntActive() {
+    return (this.doNotTrack === "1" ? 1 : 0 || this.doNotTrack === "yes" ? 1 : 0) ?? 1;
+  }
+
+  grantPermission() {
+    this.dnt = 0;
+    this.#setLocalStorage();
+    navigator.doNotTrack = "0";
+    window.doNotTrack = "0";
+    navigator.msDoNotTrack = "0";
+
+    return this.#getLocalStorage();
+  }
+
+  revokePermission() {
+    this.dnt = 1;
+    this.#setLocalStorage();
+    navigator.doNotTrack = "1";
+    window.doNotTrack = "1";
+    navigator.msDoNotTrack = "1";
+
+    return this.#getLocalStorage();
+  }
+
+  #setLocalStorage() {
+    localStorage.setItem("dnt", this.dnt.toString());
+  }
+
+  #getLocalStorage() {
+    return Boolean(Number(localStorage.getItem("dnt")));
+  }
+}
 ```
-class DoNotTrack {    }
-```
+
+Num resumo, com o código acima agora nós temos a verificação do DNT e guardamos esse valor dentro do LocalStorage, para não precisarmos verificar diretamente o cabeçalho a cada nova renderização do HTML. Agora basta usar o método `isDntActive()` para saber se o
