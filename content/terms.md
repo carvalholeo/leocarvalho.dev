@@ -43,3 +43,5 @@ Este site é feito com as seguintes tecnologias (pelos quais eu agradeço imensa
 * [Web Archive](https://web.archive.org/), de [Internet Archive](https://archive.org/)
 * [CloudFlare Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/), de [CloudFlare](https://www.cloudflare.com/)
 * [AddToAny](https://www.addtoany.com/)
+
+Agradecimentos especiais para o [William Oliveira](https://woliveiras.com.br/sobre), que tem um [tutorial sobre como construir um site com o Hugo e Netlify](https://woliveiras.com.br/posts/desenvolvendo-um-blog-com-interface-administrativa-com-hugo-e-netlify/).
