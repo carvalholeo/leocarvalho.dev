@@ -46,7 +46,7 @@ Para esse artigo, vamos utilizar o ambiente do Node, com o framework Express, pa
 
 * [Node.js 12](https://nodejs.org/en/) ou superior (dê preferência para LTS. Eu uso a versão 14, mas a partir da versão 12 já funciona)
 * [Express](https://expressjs.com/), versão 4.x
-* [Speakeasy by Levi Miner](https://www.npmjs.com/package/@levminer/speakeasy) (a versão original foi descontinuada pelo criador)
+* [otplib](https://www.npmjs.com/package/otplib) (para gerar a URL que será passada via QRCode, além de verificar se o código está correto)
 * [Gerador de QRCode](https://www.npmjs.com/package/qrcode)
 * Aplicativo no seu smartphone para ler o QRCode e interpretar que é um código temporário. Qualquer um destes vai servir
 
