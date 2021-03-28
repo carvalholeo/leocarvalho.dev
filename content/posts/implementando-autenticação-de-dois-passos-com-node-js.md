@@ -10,6 +10,15 @@ No [último texto sobre segurança](https://leocarvalho.dev/posts/porque-precisa
 
 Hoje, a ideia é implementar uma biblioteca que possa ser integrada com o framework Express, gerando códigos que se alteram a cada 30 segundos e servem como um segundo fator de autenticação.
 
+## Índice
+
+* Ponto 1
+* Ponto 2
+* Ponto 3
+* Ponto 4
+* Ponto 5
+* Ponto 6
+
 ## Relembrando sobre autenticação
 
 A autenticação básica, tal qual conhecemos hoje, é sempre baseada em conhecimento, ou seja, naquilo que você sabe.
@@ -27,15 +36,30 @@ A autenticação baseada no que você tem pode ser uma chave física, como uma Y
 
 E por fim, mas não menos importante, temos a autenticação baseado em quem você é. Essa é baseada somente em você e geralmente precisa de hardware específico, já que é reconhecimento biométrico. Entre os disponíveis (e mais comuns), temos a impressão digital e reconhecimento facial. Existem também a leitura da íris, batimentos cardíacos, jeito de andar, timbre vocal, escaneamento das veias. Ou seja, só você.
 
-### Lembrete
+### Lembretes
 
 Nunca é demais lembrar que tudo tem custo. Quanto mais segurança você quer implementar, maiores esses custos ficam. E o segundo aviso: mesmo com a biometria, a autenticação não é 100% segura (já que podem ser usados moldes de silicone na impressão digital ou fotos/modelos em 3D do seu rosto).
 
+## O que vamos utilizar
+
+Para esse artigo, vamos utilizar o ambiente do Node, com o framework Express, para ganhar velocidade na criação do projeto e vermos algo funcional. Então, o que vamos precisar aqui é:
+
+* [Node.js 12](https://nodejs.org/en/) ou superior (dê preferência para LTS. Eu uso a versão 14, mas a partir da versão 12 já funciona)
+* [Express](https://expressjs.com/), versão 4.x
+* [Speakeasy by Levi Miner](https://www.npmjs.com/package/@levminer/speakeasy) (a versão original foi descontinuada pelo criador)
+* [Gerador de QRCode](https://www.npmjs.com/package/qrcode)
+* Aplicativo no seu smartphone para ler o QRCode e interpretar que é um código temporário. Qualquer um destes vai servir
+
+  * [Google Authenticator](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=pt-BR)
+  * [Microsoft Authenticator](https://www.microsoft.com/pt-br/account/authenticator)
+  * [LastPass Authenticator](https://lastpass.com/auth/)
+  * [Authy](https://authy.com/)
 
 
 
+- - -
 
-### Referências
+##### Referências
 
 [Autenticação](https://pt.wikipedia.org/wiki/Autentica%C3%A7%C3%A3o)
 
