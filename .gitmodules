@@ -4,6 +4,7 @@
 [submodule "themes/hugo-coder"]
 	path = themes/hugo-coder
 	url = https://github.com/luizdepra/hugo-coder.git
+
 [submodule "static/admin"]
 	path = static/admin
-	url = https://github.com/carvalholeo/netlify-cms-base.git
+	url = git@github.com:carvalholeo/netlify-cms-base.git
