@@ -3,6 +3,7 @@ title: Apredizados com a programação de um bot para o Twitter
 date: 2021-04-13T14:49:16.800Z
 autoThumbnailImage: false
 thumbnailImagePosition: top
+thumbnailImage: /images/uploads/chatbot.svg
 coverImage: ""
 ---
 Ao considerar botar um sistema em produção, ainda que para hobby, vários pontos precisam ser levantados:
