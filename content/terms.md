@@ -1,5 +1,5 @@
 ---
-title: "Nossos termos"
+title: Nossos termos
 date: 2020-12-16T22:36:25-03:00
 draft: false
 ---
@@ -7,22 +7,16 @@ Nesta página, você encontrará os links para as regras que regem todos pontos 
 
 Por favor, note que estas podem ser atualizadas periodicamente e é seu dever, enquanto usuário de qualquer um dos sites sob minha gestão direta, olhar estas políticas e termos periodicamente.
 
-Se você não concorda com algum dos termos, por gentileza, não interaja com nada no site. Se tiver dúvidas, peço que [entre contato comigo aqui][contact].
+Se você não concorda com algum dos termos, por gentileza, não interaja com nada no site. Se tiver dúvidas, peço que [entre contato comigo aqui](mailto:leo@leocarvalho.dev).
 
 {{< license >}}
 
 Sem mais delongas, aqui estão os links para acesso.
 
-* [Termos de uso][termos]
-* [Política de privacidade][privacidade]
-* [Política de comentários][comentarios]
-* [Código de ética e conduta nas redes sociais][etica]
-
-[contact]: mailto:leo@leocarvalho.dev
-[termos]: /tos
-[privacidade]: /privacy-policy
-[comentarios]: /comments
-[etica]: https://github.com/brazil-it-groups/code-of-conduct/blob/master/README.md
+* [Termos de uso](/tos)
+* [Política de privacidade](/privacy-policy)
+* [Política de comentários](/comments)
+* [Código de ética e conduta nas redes sociais](https://github.com/brazil-it-groups/code-of-conduct/blob/master/README.md)
 
 Este site é feito com as seguintes tecnologias (pelos quais eu agradeço imensamente aos seus criadores):
 
@@ -33,6 +27,7 @@ Este site é feito com as seguintes tecnologias (pelos quais eu agradeço imensa
 * [Netlify CMS Interface](https://github.com/woliveiras/netlify-cms-base), de [William Oliveira](https://woliveiras.com.br) e licenciado por [MIT License](https://github.com/woliveiras/netlify-cms-base/blob/master/LICENSE)
 * [Utterances Comments Widget](https://github.com/utterance/utterances), de [Utterances](https://utteranc.es/) e licenciado por [MIT License](https://github.com/utterance/utterances/blob/master/LICENSE.md)
 * [Fork Awesome](https://forkaweso.me/), licenciado por:
+
   * Fonte: [SIL Open Font License](http://scripts.sil.org/OFL)
   * Código: [MIT License](http://opensource.org/licenses/mit-license.html)
   * Documentação: [CC-BY 3.0](http://creativecommons.org/licenses/by/3.0/)
@@ -43,5 +38,6 @@ Este site é feito com as seguintes tecnologias (pelos quais eu agradeço imensa
 * [Web Archive](https://web.archive.org/), de [Internet Archive](https://archive.org/)
 * [CloudFlare Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/), de [CloudFlare](https://www.cloudflare.com/)
 * [AddToAny](https://www.addtoany.com/)
+* Ícones e imagens por [Flaticon](https://www.flaticon.com/)
 
 Agradecimentos especiais para o [William Oliveira](https://woliveiras.com.br/sobre), que tem um [tutorial sobre como construir um site com o Hugo e Netlify](https://woliveiras.com.br/posts/desenvolvendo-um-blog-com-interface-administrativa-com-hugo-e-netlify/).
