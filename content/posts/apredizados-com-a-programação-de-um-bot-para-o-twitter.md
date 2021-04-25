@@ -117,4 +117,12 @@ Nesse momento, o bot está parado para manutenção (o que impediu o uso com a t
 
 Entre as melhorias previstas, estão:
 
-* Implementar o Design Pattern "Filter" na hora
+* Implementar o Design Pattern "Filter". O objetivo é que somente tweets que correspondam a determinados critérios (além dos enviados à API) sejam retweetados ou enfileirados
+* Enfileirar tweets recebidos por stream por padrão. Assim, os tweets serão executados a cada período, conforme a fila disponível. O objetivo é diminuir a quantidade de requisições à API do Twitter, para evitar novos bloqueios
+* Bloqueio de usuários por administrador. Se um usuário for bloqueado por um administrador (ou seja, para que seu conteúdo não seja repostado pelo bot), a ideia é que o usuário não consiga se auto-desbloquear, diferente da funcionalidade padrão, que é permitir o bloqueio e debloqueio em auto-atendimento
+* Desfazer retweets pelo próprio bot. O ponto central é não precisar sair de dentro do bot para monitorar as interações e apagar conteúdos impróprios, segundo os termos de uso ou segundo o critério do administrador responsável no momento.
+* Mostrar, quase em tempo real, os retweets feitos pelo bot na interface
+* Atualizar o pacote que cuida do stream de conteúdo atualmente, para suportar a versão 2 da API do Twitter. Mesmo considerando que a API da rede social é uma porcaria, ainda assim preciso manter a conexão atualizada.
+* Talvez, permitir interação do bot via DM, com respostas direto pela interface administrativa
+
+Uma das coisas que tenho pensado se vale a pena, é mudar o bot de JavaScript puro para TypeScript, para ter tipagem estática e as vantagens dela. Mas são apenas planos, que estão ainda  em estudo e podem nem se concretizar.
