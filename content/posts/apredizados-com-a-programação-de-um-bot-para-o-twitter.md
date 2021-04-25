@@ -48,3 +48,39 @@ No começo de novembro, uma das primeiras providências foi implementar, atravé
 A API deixa bem explícita que somente uma conexão ao endpoint de stream deve ser feito. Como bot se conecta de tempos em tempos, foi criada uma classe com o padrão Singleton. Caso já houvesse uma conexão ativa com o endpoint, ela seria retornada. Caso não, inicializaria a conexão e armazenaria numa propriedade estática.
 
 Junto disso, foi criada uma classe pra tratar do funcionamento do rate limit localmente, de forma a não ficar acessando o endpoint somente para consultar essa informação.
+
+Foi criada uma classe para trabalhar com lista de bloqueio, para garantir a privacidade daqueles que não queiram ter seus posts compartilhados pelo bot. Anteriormente, a única forma do bot não compartilhar os tweets de alguém seria se essa pessoa tivesse a conta protegida/trancada ou se ela bloqueasse a conta do robô.
+
+Então veio a primeira prova de fogo: a Páscoa.
+
+## Problemas na Páscoa
+
+No Domingo de Páscoa, o bot foi colocado no ar novamente. Entre quinta e sábado, trabalhei em alguns bugs que ficaram pendentes em dezembro e, na madrugada de domingo, já próximo ao horário em que a tradição indica a ressurreição de Jesus, o sistema estava em funcionamento completo.
+
+Algumas tags foram escolhidas para esse trabalho:
+
+* \#JesusEstaVivo
+* \#Ressurreicao
+* \#Ressuscitou
+* \#EleVive
+* \#JesusVive
+* \#JesusRessuscitou
+* \#NaoEstaMaisAqui
+* \#DomingoDaRessurreicao
+* \#RessurectionSunday
+* \#EleEstaVivo
+* \#FelizPascoa
+
+Daí surgiram as dificuldades. Enquanto ainda era de madrugada, não houveram tantas ocorrências. Mas a medida que o dia foi amanhecendo, elas foram surgindo.
+
+A dificuldade que mais apareceu num primeiro momento foram as famigeradas fancams: posts que não tem nada a ver com o assunto da tag, que tem outras tags junto e que tem o único objetivo de dar views em um vídeo aleatório, geralmente de uma pessoa famosa, banda ou série.
+
+Mas elas não seriam nada com o tsunami que estaria por vir: os bots pró-governo.
+
+> Atenção: Nesse ponto, eu vou falar mal do governo. Se você discorda de toda e qualquer crítica possível ao governo federal, pule para a próxima seção, sem passar por aqui.
+
+Não é segredo pra ninguém que no Twitter há milhares de bots falando sobre o mesmo tema, de forma a dar uma sensação de bolha e de apoio aos temas prioritários ao governo. Também não é segredo pra ninguém que estes mesmos bots se utilizam de uma ou duas tags que estão em alta para divulgar essas pautas, o que acaba inflando artificialmente os números de pessoas que possam participar dessas conversas (além do SPAM).
+
+Assim, conforme o dia foi amanhecendo, tweets do mundo inteiro foram sendo retweetados pelo bot. Mas havia um certo *bullying* com uma das tags, a "**\#JesusVive**", muitas das quais pediam intervenção militar, continham palavras de ordem de apoio ao governo e que nada tinham a ver com a Páscoa.
+
+Nesse momento, a atitude tomada foi a de retirar aquela tag. Isso fez cair MUITO a quantidade
