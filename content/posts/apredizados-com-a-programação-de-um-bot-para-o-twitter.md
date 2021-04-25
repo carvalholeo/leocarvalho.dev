@@ -101,4 +101,20 @@ Sendo assim, uma correção foi executada na hora, de aumentar o tempo entre ess
 
 Desliguei o bot e fui dormir, já que passei a noite trabalhando para garantir que o sistema desse os retweets.
 
-Meio-dia, religuei o bot, que foi travado novamente às 13h. Desligado. Após novos reajustes, servidor reativado às 15h, dessa vez sem bloqueios. O bot funcionou normalmente até às 20h, quando o sistema foi fechado manualmente.
+Meio-dia, religuei o bot, que foi travado novamente antes das 13h. Desligado. Após novos reajustes, servidor reativado às 15h, dessa vez sem bloqueios. O bot funcionou normalmente até às 20h, quando o sistema foi fechado manualmente.
+
+## Lições aprendidas 2
+
+Agora, o que aprendi com essa nova entrada em funcionamento?
+
+* Monitore (ainda mais) ativamente o uso do bot
+* Tenha uma tag exclusiva ou de conteúdo confiável
+* Avalie servidores com antecedência, para não precisar rodar no ambiente local (ou seja, dependente de serviço de internet residencial e de que o computador continue funcionando corretamente)
+
+## Próximos passos
+
+Nesse momento, o bot está parado para manutenção (o que impediu o uso com a tag **\#AzusaDay**, em comemoração ao avivamento pentecostal na Rua Azusa).
+
+Entre as melhorias previstas, estão:
+
+* Implementar o Design Pattern "Filter" na hora
