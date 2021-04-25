@@ -33,4 +33,6 @@ O primeiro e maior de todos os problemas, na minha opinião, é a documentação
 
 Além disso, ela possui um rate limit, o que é padrão. Pena que não informa o limite diretamente na chamada pra um endpoint. É obrigatório consultar outro endpoint pra consultar o limite da API. Esse endpoint também possui limite de uso 🤡🤡
 
-Sabendo que há um limite para dar um retweet, uma da primeiras providências foi criar uma fila, adicionando o tweet que bata com os critérios especificados no banco de dados. Assim, após o reset do limite, esses tweets seriam retirados da fila e retweetados normalmente.
+Sabendo que há um limite para dar um retweet, uma das primeiras providências foi criar uma fila, adicionando o tweet que bata com os critérios especificados no banco de dados. Assim, após o reset do limite, esses tweets seriam retirados da fila e retweetados normalmente.
+
+Outra dificuldade foi o tratamento diferente entre dois pedidos idênticos de liberação de acesso à API. Enquanto na minha conta pessoal, a liberação às chaves da API foi imediata, na conta recém-criada apenas para dar os retweets, com o mesmo texto e caso de uso, houve certo 'embaraço' para a liberação. Essas chaves chegaram somente após o dia da reforma protestante.
