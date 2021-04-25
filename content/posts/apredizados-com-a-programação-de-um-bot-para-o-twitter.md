@@ -36,3 +36,11 @@ Além disso, ela possui um rate limit, o que é padrão. Pena que não informa o
 Sabendo que há um limite para dar um retweet, uma das primeiras providências foi criar uma fila, adicionando o tweet que bata com os critérios especificados no banco de dados. Assim, após o reset do limite, esses tweets seriam retirados da fila e retweetados normalmente.
 
 Outra dificuldade foi o tratamento diferente entre dois pedidos idênticos de liberação de acesso à API. Enquanto na minha conta pessoal, a liberação às chaves da API foi imediata, na conta recém-criada apenas para dar os retweets, com o mesmo texto e caso de uso, houve certo 'embaraço' para a liberação. Essas chaves chegaram somente após o dia da reforma protestante.
+
+Nessa fase, a estratégia adotada era chamar a API de tempos em tempos e começar a dar RT, exceto se o limite fosse estourado, onde o post era enviado para a fila, de onde era retirado após o devido recompartilhamento.
+
+De certa forma, nessa primeira parte o bot funcionou relativamente bem, fazendo com que os retweets acontecessem normalmente, sem estourar o limite da API.
+
+## Primeira leva de melhorias
+
+No começo de novembro, uma das primeiras providências foi implementar, através do endpoint de stream de dados, um esquema para compartilhar os tweets assim
