@@ -1,5 +1,3 @@
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577931231143329"
-     crossorigin="anonymous"></script>
 <script>
   const bodyAds = document.querySelector('body');
   const head = document.querySelector('head');
@@ -15,20 +13,8 @@
     if (isServer && isPost) {
       const ads = document.createElement('script');
       ads.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577931231143329');
-      ads.setAttribute('crossorigin', 'anonymous');
+      // ads.setAttribute('crossorigin', 'anonymous');
       head.appendChild(ads);
-
-      // Google AMP Ads Temporariamente desativado
-
-      // const ampScript = document.createElement('script');
-      // ampScript.setAttribute('src', "https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js");
-      // ampScript.setAttribute('custom-element', 'amp-auto-ads');
-      // head.append(ampScript);
-
-      // const amp = document.createElement('amp-auto-ads');
-      // amp.setAttribute('type', 'adsense');
-      // amp.setAttribute('data-ad-client', 'ca-pub-1577931231143329');
-      // bodyAds.append(amp);
 
       setTimeout(() => {
         const advertsigns = document.querySelectorAll('div.google-auto-placed.ap_container');
@@ -37,13 +23,6 @@
             <hr />
             <p style="text-align:center">CONTINUA APÓS A PUBLICIDADE</p>
           `);
-        });
-      }, 5000);
-    } else {
-      setTimeout(() => {
-        const advertsigns = document.querySelectorAll('div.google-auto-placed');
-        advertsigns.forEach(ads => {
-          ads.classList.add('mkt-hide');
         });
       }, 5000);
     }
