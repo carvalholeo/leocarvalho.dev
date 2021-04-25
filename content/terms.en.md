@@ -1,5 +1,5 @@
 ---
-title: "Legal"
+title: Legal
 date: 2020-12-16T22:36:25-03:00
 draft: false
 ---
@@ -43,5 +43,6 @@ This site is built with the below technologies (for what I'm so grateful to thei
 * [Web Archive](https://web.archive.org/), from [Internet Archive](https://archive.org/)
 * [CloudFlare Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/), from [CloudFlare](https://www.cloudflare.com/)
 * [AddToAny](https://www.addtoany.com/)
+* Icons and images by [Flaticon](https://www.flaticon.com/)
 
 Special thanks to [William Oliveira](https://woliveiras.com.br/sobre), which wrote a [tutorial about how to build a site using Hugo, and Netlify](https://woliveiras.com.br/posts/desenvolvendo-um-blog-com-interface-administrativa-com-hugo-e-netlify/) (text in Brazilian Portuguese).
