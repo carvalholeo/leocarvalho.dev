@@ -93,4 +93,12 @@ Além disso, nessa atualização implementada, foi criada uma rotina que consult
 
 Mas a vida... Ah, a vida, essa, sim, é uma caixinha de surpresas! E na manhã daquele domingo, as chaves da API foram bloqueadas, por excesso de tweets (2.300).
 
-Mas se você olhar o bot nesse exato momento, vai ver que não há nem 1500 tweets feitos
+Mas, enquanto escrevo esse artigo (final de abril de 2021), não há nem 1200 tweets feitos. Mesmo se fossem colocados de volta os retweets de conteúdo duvidoso, teria, no máximo, 1500 tweets. Então, qual foi o problema?
+
+Acredito que tenha sido as requisições em paralelo com o endpoint de limites da API, que pela manhã estava executando a cada 10 segundos.
+
+Sendo assim, uma correção foi executada na hora, de aumentar o tempo entre essas requisições. De todo modo, a conta do bot estaria bloqueada por cerca de 3 a 4 horas. E ainda eram 8h30m da manhã.
+
+Desliguei o bot e fui dormir, já que passei a noite trabalhando para garantir que o sistema desse os retweets.
+
+Meio-dia, religuei o bot, que foi travado novamente às 13h. Desligado. Após novos reajustes, servidor reativado às 15h, dessa vez sem bloqueios. O bot funcionou normalmente até às 20h, quando o sistema foi fechado manualmente.
