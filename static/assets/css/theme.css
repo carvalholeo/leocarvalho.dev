@@ -10,3 +10,7 @@ body.colorscheme-light .highlight pre{
 body.colorscheme-dark .content .centered .about ul li a {
   line-height: 5rem;
 }
+
+.mkt-hide {
+  display: none !important;
+}

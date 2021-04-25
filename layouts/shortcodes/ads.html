@@ -1,3 +1,5 @@
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577931231143329"
+     crossorigin="anonymous"></script>
 <script>
   const bodyAds = document.querySelector('body');
   const head = document.querySelector('head');
@@ -35,6 +37,13 @@
             <hr />
             <p style="text-align:center">CONTINUA APÓS A PUBLICIDADE</p>
           `);
+        });
+      }, 5000);
+    } else {
+      setTimeout(() => {
+        const advertsigns = document.querySelectorAll('div.google-auto-placed');
+        advertsigns.forEach(ads => {
+          ads.classList.add('mkt-hide');
         });
       }, 5000);
     }
