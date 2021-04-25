@@ -77,13 +77,20 @@ A dificuldade que mais apareceu num primeiro momento foram as famigeradas fancam
 
 Mas elas não seriam nada com o tsunami que estaria por vir: os bots pró-governo.
 
----
+- - -
+
 > Atenção: Nesse ponto, eu vou falar mal do governo. Se você discorda de toda e qualquer crítica possível ao governo federal, pule para a próxima seção, sem passar por aqui.
 
+- - -
 
----
 Não é segredo pra ninguém que no Twitter há milhares de bots falando sobre o mesmo tema, de forma a dar uma sensação de bolha e de apoio aos temas prioritários ao governo. Também não é segredo pra ninguém que estes mesmos bots se utilizam de uma ou duas tags que estão em alta para divulgar essas pautas, o que acaba inflando artificialmente os números de pessoas que possam participar dessas conversas (além do SPAM).
 
 Assim, conforme o dia foi amanhecendo, tweets do mundo inteiro foram sendo retweetados pelo bot. Mas havia um certo *bullying* com uma das tags, a "**\#JesusVive**", muitas das quais pediam intervenção militar, continham palavras de ordem de apoio ao governo e que nada tinham a ver com a Páscoa.
 
-Nesse momento, a atitude tomada foi a de retirar aquela tag. Isso fez cair MUITO a quantidade
+Nesse momento, a atitude tomada foi a de retirar aquela tag. Isso fez cair MUITO a quantidade de conteúdo que considero inadequado. Aquilo que acabou sendo retweetado, foi desfeito (manualmente, pela interface web do Twitter).
+
+Além disso, nessa atualização implementada, foi criada uma rotina que consulta periodicamente o endpoint de rate limit da API, para garantir que realmente os tweets vão para a fila caso o limite tenha sido atingido.
+
+Mas a vida... Ah, a vida, essa, sim, é uma caixinha de surpresas! E na manhã daquele domingo, as chaves da API foram bloqueadas, por excesso de tweets (2.300).
+
+Mas se você olhar o bot nesse exato momento, vai ver que não há nem 1500 tweets feitos
