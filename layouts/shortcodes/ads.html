@@ -12,9 +12,9 @@
 
     if (isServer && isPost) {
       const ads = document.createElement('script');
-      ads.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
-      ads.setAttribute('data-ad-client', 'ca-pub-1577931231143329');
-      head.append(ads);
+      ads.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577931231143329');
+      ads.setAttribute('crossorigin', 'anonymous');
+      head.appendChild(ads);
 
       // Google AMP Ads Temporariamente desativado
 
