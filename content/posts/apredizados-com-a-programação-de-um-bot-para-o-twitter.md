@@ -47,4 +47,4 @@ No começo de novembro, uma das primeiras providências foi implementar, atravé
 
 A API deixa bem explícita que somente uma conexão ao endpoint de stream deve ser feito. Como bot se conecta de tempos em tempos, foi criada uma classe com o padrão Singleton. Caso já houvesse uma conexão ativa com o endpoint, ela seria retornada. Caso não, inicializaria a conexão e armazenaria numa propriedade estática.
 
-Junto disso, foi criada uma classe pra tratar do funcionamento do rate limit localmente, de forma a não ficar acessando o endpoint somente para consultar esse dado.
+Junto disso, foi criada uma classe pra tratar do funcionamento do rate limit localmente, de forma a não ficar acessando o endpoint somente para consultar essa informação.
