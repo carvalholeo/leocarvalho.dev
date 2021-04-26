@@ -20,25 +20,40 @@ body .content .centered .about ul li a {
   bottom: 40px;
   left: 10%;
   right: 10%;
-  width: 80%;
   padding: 5px 14px;
   display: flex;
   align-items: center;
   background-color: inherit;
   justify-content: space-between;
   border-radius: 5px;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
-  text-align: center;
 }
 
 .close {
-  height: 20px;
-  background-color: #777;
+  height: 25px;
   border: none;
-  color: white;
   border-radius: 2px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+body.colorscheme-dark .cookie-banner {
+  border: 1px solid rgba(150, 150, 150, 0.8);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
+}
+
+body.colorscheme-light .cookie-banner {
+  border: 1px solid rgba(50, 50, 50, 0.8);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.3);
+}
+
+body.colorscheme-light .close {
+  background-color: #212121;
+  color: #dfdfdf;
+}
+
+body.colorscheme-dark .close {
+  background-color: #dfdfdf;
+  color: #212121;
 }
