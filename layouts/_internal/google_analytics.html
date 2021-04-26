@@ -3,6 +3,7 @@
 {{ with .Site.GoogleAnalytics }}
 
 <script>
+  'use strict';
 
   const analyticsKey = '{{ . }}';
   const analyticsURL = `https:\/\/www.googletagmanager.com/gtag/js?id=${analyticsKey}`;
@@ -15,40 +16,45 @@
 
   {{ template "__ga_js_set_doNotTrack" $ }}
 
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PG7DJZC');
+  ((w, d, s, l, i) => {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+
+    const f = d.getElementsByTagName(s)[0]
+    const j = d.createElement(s)
+    const dl = l !== 'dataLayer' ? `'&l=${l}` : '';
+
+    j.async = true;
+    j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-PG7DJZC');
 
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
-  if (!doNotTrack) {
-    gtag('consent', 'default', {
-      'ad_storage': 'granted',
-      'analytics_storage': 'granted'
-    })
+  gtag('config', analyticsKey, {
+    'link_attribution': {
+      'cookie_name': '_site',
+      'cookie_domain': navigatorURL,
+      'cookie_expires': 0,
+      'levels': 6
+    },
+    'anonymizeIp': true
+  });
 
-    gtag('config', analyticsKey, {
-      'link_attribution': {
-        'cookie_name': '_site',
-        'cookie_domain': navigatorURL,
-        'cookie_expires': 0,
-        'levels': 6
-      }
-    });
-
-  } else {
+  if (!doNotTrack || !cookieAllow) {
     gtag('consent', 'default', {
       'ad_storage': 'denied',
       'analytics_storage': 'denied'
-    })
-    gtag('config', analyticsKey)
-    {{ if $pc.AnonymizeIP }}
-    gtag('set', 'anonymizeIp', true);
-    {{ end }}
+    });
+  } else {
+    gtag('consent', 'default', {
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted'
+    });
   }
 </script>
 {{ end }}
@@ -57,18 +63,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {{- define "__ga_js_set_doNotTrack" -}}{{/* This is also used in the async version. */}}
 {{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
 {{- if not $pc.RespectDoNotTrack -}}
-  const doNotTrack = false;
+const doNotTrack = false;
 {{- else -}}
-  const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-  const doNotTrack = (dnt === "1" || dnt === "yes");
+const getAuthorization = localStorage.getItem('cookieSeen');
+const cookieAllow = getAuthorization === null ? false : true;
+const dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+const doNotTrack = (dnt === "1" || dnt === "yes");
 {{- end -}}
 {{- end -}}
 
 <noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG7DJZC"
-  height="0" width="0" style="display:none;visibility:hidden">
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG7DJZC" height="0" width="0"
+    style="display:none;visibility:hidden">
   </iframe>
 </noscript>
+
+<div class='cookie-banner' style="display: none;">
+  <p>Acessando esse site, você concorda com a <a href='/privacy-policy'>política de cookies</a>
+  </p>
+  <button class='close'>&times;</button>
+</div>
 
 {{- template "shortcodes/ads.html" . -}}
 {{- template "shortcodes/browser-update.html" . -}}

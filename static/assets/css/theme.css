@@ -7,10 +7,38 @@ body.colorscheme-light .highlight pre{
   background-color: #dfdfdf !important;
 }
 
-body.colorscheme-dark .content .centered .about ul li a {
+body .content .centered .about ul li a {
   line-height: 5rem;
 }
 
 .mkt-hide {
   display: none !important;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
