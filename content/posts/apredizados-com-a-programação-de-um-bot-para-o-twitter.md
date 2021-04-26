@@ -126,3 +126,15 @@ Entre as melhorias previstas, estão:
 * Talvez, permitir interação do bot via DM, com respostas direto pela interface administrativa
 
 Uma das coisas que tenho pensado se vale a pena, é mudar o bot de JavaScript puro para TypeScript, para ter tipagem estática e as vantagens dela. Mas são apenas planos, que estão ainda  em estudo e podem nem se concretizar.
+
+## Ideias
+
+Algo que gostaria de fazer no futuro, seria a criação de bots semelhantes, mas focados nas outras redes sociais, como Facebook, Instagram, Pinterest e, quem sabe, até mesmo no TikTok.
+
+- - -
+
+Muito obrigado pela sua leitura até aqui. Se você tem alguma sugestão, deixe aqui nos comentários ou mande pra mim, diretamente por uma das redes que estão disponíveis na [página principal do site](https://leocarvalho.dev).
+
+
+
+Até mais!
