@@ -1,6 +1,6 @@
 ---
 title: Apredizados com a programação de um bot para o Twitter
-date: 2021-04-13T14:49:16.800Z
+date: 2021-04-26T00:08:16.670Z
 categories:
   - Relatórios
   - Relatos
