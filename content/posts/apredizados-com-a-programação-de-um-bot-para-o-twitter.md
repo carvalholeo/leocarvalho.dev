@@ -55,7 +55,7 @@ Sabendo que há um limite para dar um retweet, uma das primeiras providências f
 
 Outra dificuldade foi o tratamento diferente entre dois pedidos idênticos de liberação de acesso à API. Enquanto na minha conta pessoal, a liberação às chaves da API foi imediata, na conta recém-criada apenas para dar os retweets, com o mesmo texto e caso de uso, houve certo 'embaraço' para a liberação. Essas chaves chegaram somente após o dia da reforma protestante.
 
-Nessa fase, a estratégia adotada era chamar a API de tempos em tempos e começar a dar RT, exceto se o limite fosse estourado, onde o post era enviado para a fila, de onde era retirado após o devido recompartilhamento.
+Nessa fase, a estratégia adotada era chamar a API de tempos em tempos e começar a dar RT, exceto se o limite fosse estourado, onde o post era enviado para a fila, de onde era retirado após o devido compartilhamento.
 
 De certa forma, nessa primeira parte o bot funcionou relativamente bem, fazendo com que os retweets acontecessem normalmente, sem estourar o limite da API.
 
@@ -89,7 +89,7 @@ Algumas tags foram escolhidas para esse trabalho:
 * \#EleEstaVivo
 * \#FelizPascoa
 
-Daí surgiram as dificuldades. Enquanto ainda era de madrugada, não houveram tantas ocorrências. Mas a medida que o dia foi amanhecendo, elas foram surgindo.
+Daí surgiram as dificuldades. Enquanto ainda era de madrugada, não houve tantas ocorrências. Mas à medida que o dia foi amanhecendo, elas foram surgindo.
 
 A dificuldade que mais apareceu num primeiro momento foram as famigeradas fancams: posts que não tem nada a ver com o assunto da tag, que tem outras tags junto e que tem o único objetivo de dar views em um vídeo aleatório, geralmente de uma pessoa famosa, banda ou série.
 
@@ -137,7 +137,7 @@ Entre as melhorias previstas, estão:
 
 * Implementar o Design Pattern "Filter". O objetivo é que somente tweets que correspondam a determinados critérios (além dos enviados à API) sejam retweetados ou enfileirados
 * Enfileirar tweets recebidos por stream por padrão. Assim, os tweets serão executados a cada período, conforme a fila disponível. O objetivo é diminuir a quantidade de requisições à API do Twitter, para evitar novos bloqueios
-* Bloqueio de usuários por administrador. Se um usuário for bloqueado por um administrador (ou seja, para que seu conteúdo não seja repostado pelo bot), a ideia é que o usuário não consiga se auto-desbloquear, diferente da funcionalidade padrão, que é permitir o bloqueio e debloqueio em auto-atendimento
+* Bloqueio de usuários por administrador. Se um usuário for bloqueado por um administrador (ou seja, para que seu conteúdo não seja repostado pelo bot), a ideia é que o usuário não consiga se desbloquear, diferente da funcionalidade padrão, que é permitir o bloqueio e debloqueio em autoatendimento
 * Desfazer retweets pelo próprio bot. O ponto central é não precisar sair de dentro do bot para monitorar as interações e apagar conteúdos impróprios, segundo os termos de uso ou segundo o critério do administrador responsável no momento.
 * Mostrar, quase em tempo real, os retweets feitos pelo bot na interface
 * Atualizar o pacote que cuida do stream de conteúdo atualmente, para suportar a versão 2 da API do Twitter. Mesmo considerando que a API da rede social é uma porcaria, ainda assim preciso manter a conexão atualizada.
