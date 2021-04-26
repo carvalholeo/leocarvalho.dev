@@ -141,6 +141,8 @@ Entre as melhorias previstas, estão:
 * Desfazer retweets pelo próprio bot. O ponto central é não precisar sair de dentro do bot para monitorar as interações e apagar conteúdos impróprios, segundo os termos de uso ou segundo o critério do administrador responsável no momento.
 * Mostrar, quase em tempo real, os retweets feitos pelo bot na interface
 * Atualizar o pacote que cuida do stream de conteúdo atualmente, para suportar a versão 2 da API do Twitter. Mesmo considerando que a API da rede social é uma porcaria, ainda assim preciso manter a conexão atualizada.
+* Poder ligar e desligar o bot a qualquer momento, somente usando a interface gráfica
+* Trocar as palavras-chave e tags que o bot vai rastrear e dar RT, sem precisar mexer no código ou nas configurações do servidor do bot
 * Talvez, permitir interação do bot via DM, com respostas direto pela interface administrativa
 
 Uma das coisas que tenho pensado se vale a pena, é mudar o bot de JavaScript puro para TypeScript, para ter tipagem estática e as vantagens dela. Mas são apenas planos, que estão ainda  em estudo e podem nem se concretizar.
@@ -152,7 +154,5 @@ Algo que gostaria de fazer no futuro, seria a criação de bots semelhantes, mas
 - - -
 
 Muito obrigado pela sua leitura até aqui. Se você tem alguma sugestão, deixe aqui nos comentários ou mande pra mim, diretamente por uma das redes que estão disponíveis na [página principal do site](https://leocarvalho.dev).
-
-
 
 Até mais!
