@@ -1,6 +1,24 @@
 ---
 title: Apredizados com a programação de um bot para o Twitter
 date: 2021-04-13T14:49:16.800Z
+categories:
+  - Relatórios
+  - Relatos
+  - Twitter
+tags:
+  - twitter
+  - bot
+  - protestant-bot
+  - problemas
+keywords:
+  - api
+  - twitter
+  - bot
+  - reforma
+  - protestante
+  - páscoa
+  - lutero
+  - governo
 autoThumbnailImage: false
 thumbnailImagePosition: top
 thumbnailImage: /images/uploads/chatbot.svg
