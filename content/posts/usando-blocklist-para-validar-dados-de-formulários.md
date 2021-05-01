@@ -27,7 +27,7 @@ Então, o que fazer?
 Vamos começar construindo uma função, que recebe o valor a ser analisado e retorna um booleano.
 
 ```javascript
-function textoEstaPermitido (nome) {
+function textoEstaPermitido (texto) {
   const blocklist = [
     'admin',
     'root',
@@ -40,10 +40,24 @@ function textoEstaPermitido (nome) {
     'outros nomes aqui'
   ];
   
-  const textoImproprio = blocklist
-    .includes(nome)
-    .find(elemento => elemento)
-  
-  return textoImproprio ? true : false;
+  return !blocklist
+    .includes(texto);
 }
 ```
+
+Qual é a ideia aqui? Fazer uma pesquisa em um array de palavras bloqueadas e dizer se o texto passado como parâmetro da função é permitido ou não. Isso é feito por meio do método `includes` de Array, que retorna `true `se o valor está permitido e `false `se o valor está bloqueado, por meio da negação do resultado no `return`.
+
+Então, bastaria chamar a função para cada um dos campos que você quer validar e fazer um `if`, para confirmar se o texto está liberado ou não.
+
+```javascript
+// seu código
+
+const estaValido = textoEstaPermitido('nome completo');
+
+if (!estaValido) {
+  alert('O nome digitado não é aceito pelo sistema');
+  return;
+}
+```
+
+Assim, a validação estaria completada e o nosso trabalho concluído, certo? Errado.
