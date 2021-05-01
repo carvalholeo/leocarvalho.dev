@@ -1,6 +1,22 @@
 ---
 title: Usando blocklist para validar dados de formulários
 date: 2021-04-30T23:58:55.027Z
+categories:
+  - Tutorial
+  - Código
+  - Javascript
+tags:
+  - exemplo
+  - blocklist
+  - palavrão
+  - validação
+keywords:
+  - lista
+  - bloqueio
+  - blocklist
+  - validar
+  - regex
+  - array
 autoThumbnailImage: false
 thumbnailImagePosition: top
 thumbnailImage: /images/uploads/proibido.png
@@ -43,6 +59,7 @@ function textoEstaPermitido (texto) {
   return !blocklist
     .includes(texto.toLowerCase());
 }
+
 ```
 
 Qual é a ideia aqui? Fazer uma pesquisa em um array de palavras bloqueadas e dizer se o texto passado como parâmetro da função é permitido ou não. Isso é feito por meio do método `includes` de Array, que retorna `true `se o valor está permitido e `false `se o valor está bloqueado, por meio da negação do resultado no `return`.
@@ -58,6 +75,7 @@ if (!estaValido) {
   alert('O nome digitado não é aceito pelo sistema');
   return;
 }
+
 ```
 
 Assim, a validação estaria completada e o nosso trabalho concluído, certo? Errado.
@@ -92,6 +110,7 @@ function textoEstaPermitido (texto) {
     .map(bloqueada => textoParaArray.includes(bloqueada))
     .includes(true);
 }
+
 ```
 
 Vamos por partes.
@@ -123,4 +142,6 @@ Por isso, essa técnica deve ser usada com cuidado, para não haver efeitos cola
 
 Durante esse texto, desconsiderei propositalmente complexidade de algoritmo e a Big O Notation. Sim, eu sei que do jeito que está atualmente, ter uma grande lista de bloqueios ou um texto muito grande a ser testado pode gerar fazer com que o sistema gaste muitos recursos computacionais e isso pode ser melhorado.
 
-A ideia aqui foi de mostrar
+A ideia aqui foi de mostrar como podemos trabalhar com listas de bloqueio de termos no sistema, testando uma string pequena contra essa lista.
+
+Então, agora quero saber, o que você achou? Onde esse código poderia melhorar? Deixa aqui nos comentários!
