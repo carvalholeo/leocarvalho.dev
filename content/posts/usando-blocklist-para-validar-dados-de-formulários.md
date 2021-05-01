@@ -14,4 +14,6 @@ Ao receber dados de formulários, sempre precisamos fazer validações, dos mais
 * Campo obrigatório
 * Tipos dos dados
 
-Muitas vezes, podemos querer realizar algum tipo de validação, também
+Muitas vezes, podemos querer realizar algum tipo de validação, também, de termos digitados nos campos dos formulários.
+
+Vamos pensar num formulário
