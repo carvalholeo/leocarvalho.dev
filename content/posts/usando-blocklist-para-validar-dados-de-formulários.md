@@ -61,3 +61,5 @@ if (!estaValido) {
 ```
 
 Assim, a validação estaria completada e o nosso trabalho concluído, certo? Errado.
+
+## Campos com espaços
