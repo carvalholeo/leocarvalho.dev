@@ -41,7 +41,7 @@ function textoEstaPermitido (texto) {
   ];
   
   return !blocklist
-    .includes(texto);
+    .includes(texto.toLowerCase());
 }
 ```
 
@@ -63,3 +63,5 @@ if (!estaValido) {
 Assim, a validação estaria completada e o nosso trabalho concluído, certo? Errado.
 
 ## Campos com espaços
+
+Para os casos em que o usuário colocar um texto, a técnica acima não vai funcionar. Isso porque nossa função está procurando pro uma palavra em específico
