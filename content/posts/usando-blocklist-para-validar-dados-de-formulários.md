@@ -64,4 +64,36 @@ Assim, a validação estaria completada e o nosso trabalho concluído, certo? Er
 
 ## Campos com espaços
 
-Para os casos em que o usuário colocar um texto, a técnica acima não vai funcionar. Isso porque nossa função está procurando pro uma palavra em específico. Então, se o usuário colocar um espaço no meio
+Para os casos em que o usuário colocar um texto, a técnica acima não vai funcionar. Isso porque nossa função está procurando pro uma palavra em específico. Então, se o usuário colocar um espaço no antes, durante ou depois, a função acima não vai pegar. Pra resolver isso, vamos fazer algumas alterações.
+
+```javascript
+function textoEstaPermitido (texto) {
+  const blocklist = [
+    'admin',
+    'root',
+    'super',
+    'superuser',
+    'user',
+    'manager',
+    'gerente',
+    'ceo',
+    'outros nomes aqui'
+  ];
+  
+  const textoParaArray = texto
+    .trim()
+    .toLowerCase()
+    .split(' ')
+    .filter(palavra => palavra !== '' || palavra !== '  ');
+  
+  return !blocklist
+    .map(bloqueada => textoParaArray.includes(bloqueada))
+    .includes(true);
+}
+```
+
+Vamos por partes.
+
+A constante `textoParaArray` recebe a execução de vários métodos sobre a string original, e o retorno de cada um, serve de insumo para o próximo método.
+
+1. O método `trim()` é um método de String e serve pra tirar os espaços no começo e no fim dela.
