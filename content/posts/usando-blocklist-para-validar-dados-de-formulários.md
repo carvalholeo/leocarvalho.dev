@@ -64,4 +64,4 @@ Assim, a validação estaria completada e o nosso trabalho concluído, certo? Er
 
 ## Campos com espaços
 
-Para os casos em que o usuário colocar um texto, a técnica acima não vai funcionar. Isso porque nossa função está procurando pro uma palavra em específico
+Para os casos em que o usuário colocar um texto, a técnica acima não vai funcionar. Isso porque nossa função está procurando pro uma palavra em específico. Então, se o usuário colocar um espaço no meio
