@@ -62,30 +62,6 @@ enableRobotsTXT = true
   rel = "noopener noreferrer"
 
 [[social]]
-  name = "Instagram"
-  icon = "fa fa-instagram fa-3x"
-  weight = 4
-  url = "https://www.instagram.com/carvalho_leo"
-  target = "_blank"
-  rel = "noopener noreferrer"
-
-[[social]]
-  name = "Telegram"
-  icon = "fa fa-telegram fa-3x"
-  weight = 5
-  url = "https://t.me/carvalho_leo"
-  target = "_blank"
-  rel = "noopener noreferrer"
-
-[[social]]
-  name = "Pinterest"
-  icon = "fa fa-pinterest fa-3x"
-  weight = 6
-  url = "https://pinterest.com/carvalho_leo/"
-  target = "_blank"
-  rel = "noopener noreferrer"
-
-[[social]]
   name = "YouTube"
   icon = "fa fa-youtube-play fa-3x"
   weight = 7
@@ -110,30 +86,6 @@ enableRobotsTXT = true
   rel = "noopener noreferrer"
 
 [[social]]
-  name = "Blog pessoal"
-  icon = "fa fa-wordpress fa-3x"
-  weight = 10
-  url = "https://carvalholeo.wordpress.com/"
-  target = "_blank"
-  rel = "noopener noreferrer"
-
-[[social]]
-  name = "WhatsApp"
-  icon = "fa fa-whatsapp fa-3x"
-  weight = 3.0
-  url = "http://wa.me/5513997375760?source=site&text=Oi, te achei pelo seu site! Vamos conversar?"
-  target = "_blank"
-  rel = "noopener noreferrer"
-
-[[social]]
-  name = "Facebook"
-  icon = "fa fa-facebook fa-3x"
-  weight = 12
-  url = "https://www.facebook.com/carvalho.leo95/"
-  target = "_blank"
-  rel = "noopener noreferrer"
-
-[[social]]
   name = "E-mail"
   icon = "fa fa-envelope fa-3x"
   weight = 3.1
@@ -142,33 +94,10 @@ enableRobotsTXT = true
   rel = "noopener noreferrer"
 
 [[social]]
-  name = "Telefone"
-  icon = "fa fa-phone fa-3x"
-  weight = 3.2
-  url = "tel:(13)99737-5760"
-  rel = "noopener noreferrer"
-
-[[social]]
   name = "Lattes"
   icon = "fa fa-flask fa-3x"
   weight = 3.3
   url = "http://lattes.cnpq.br/3759113149575688"
-  target = "_blank"
-  rel = "noopener noreferrer"
-
-[[social]]
-  name = "Spotify"
-  icon = "fa fa-spotify fa-3x"
-  weight = 10
-  url = "https://open.spotify.com/user/_carvalho_leo?si=FlkGu_bOSAGrqWz3dhqCbg"
-  target = "_blank"
-  rel = "noopener noreferrer"
-
-[[social]]
-  name = "Skype"
-  icon = "fa fa-skype fa-3x"
-  weight = 10
-  url = "https://join.skype.com/invite/rICfbfqsn2c8"
   target = "_blank"
   rel = "noopener noreferrer"
 
