@@ -11,14 +11,6 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-googleAnalytics = "UA-139872605-3"
-
-[privacy]
-[privacy.GoogleAnalytics]
-    RespectDoNotTrack = true
-    AnonymizeIP = true
-    Disable = false
-
 [menu]
     [[menu.main]]
         name = "Blog"
