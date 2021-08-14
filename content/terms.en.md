@@ -35,7 +35,6 @@ This site is built with the below technologies (for what I'm so grateful to thei
 * [Twemoji](https://github.com/twitter/twemoji) from Twitter, and licensed by [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 * [Google AdSense](https://www.google.com/adsense/start/), from [Google](https://about.google/)
 * [Web Archive](https://web.archive.org/), from [Internet Archive](https://archive.org/)
-* [CloudFlare Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/), from [CloudFlare](https://www.cloudflare.com/)
 * [AddToAny](https://www.addtoany.com/)
 * Icons and images by [Flaticon](https://www.flaticon.com/)
 
