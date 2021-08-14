@@ -33,10 +33,8 @@ Este site é feito com as seguintes tecnologias (pelos quais eu agradeço imensa
   * Documentação: [CC-BY 3.0](http://creativecommons.org/licenses/by/3.0/)
 * [Gravatar](https://en.gravatar.com/), de [Automattic](http://automattic.com/)
 * [Twemoji](https://github.com/twitter/twemoji) do Twitter e licenciado por [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-* [Google Analytics](https://marketingplatform.google.com/intl/pt-BR_br/about/analytics/), de [Google](https://about.google/)
 * [Google AdSense](https://www.google.com/adsense/start/), de [Google](https://about.google/)
 * [Web Archive](https://web.archive.org/), de [Internet Archive](https://archive.org/)
-* [CloudFlare Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/), de [CloudFlare](https://www.cloudflare.com/)
 * [AddToAny](https://www.addtoany.com/)
 * Ícones e imagens por [Flaticon](https://www.flaticon.com/)
 
