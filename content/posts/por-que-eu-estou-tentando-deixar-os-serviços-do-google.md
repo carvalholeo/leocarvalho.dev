@@ -1,10 +1,15 @@
 ---
-title: Por que eu estou tentando deixar os serviços do Google?
+title: Por que eu estou deixando o Google Analytics?
 date: 2021-08-14T21:08:54.339Z
 categories:
   - privacidade
   - LGPD
-  - ""
+keywords:
+  - google analytics
+  - views
+  - analise
+  - google
+  - analytics
 autoThumbnailImage: false
 thumbnailImagePosition: top
 coverImage: ""
