@@ -10,6 +10,7 @@ keywords:
   - analise
   - google
   - analytics
+  - dados
 autoThumbnailImage: false
 thumbnailImagePosition: top
 coverImage: ""
