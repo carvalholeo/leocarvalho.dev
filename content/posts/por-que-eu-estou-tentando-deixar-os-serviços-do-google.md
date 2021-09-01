@@ -35,4 +35,10 @@ Além disso, o GA fornece detalhes extremos sobre o comportamento, além de reco
 
 Se por um lado, temos muitas informações (anonimizadas, é verdade), por outro, as informações demográficas precisam ser conseguidos de alguma forma, como, por exemplo, cidade identificada, faixa etária, etc. E não fica claro, nem nos termos de uso sobre como o GA faz essa identificação dos dados.
 
-Bom para anunciantes, que podem segmentar melhor seus anúncios; ruim para a privacidade dos usuários, que podem não querer ser segmentados de maneira tão específica (mesmo no caso do *[FLoC](https://tecnoblog.net/437966/o-que-e-floc/)* - Federated Learning of Cohorts, que cria segmentos mais "gerais").
+Bom para anunciantes, que podem segmentar melhor seus anúncios; ruim para a privacidade dos usuários, que podem não querer ser segmentados de maneira tão específica (mesmo no caso do *[FLoC](https://tecnoblog.net/437966/o-que-e-floc/)* — Federated Learning of Cohorts, que cria segmentos mais “gerais”).
+
+### Usuários querem privacidade
+
+Evidentemente, essa afirmação é uma generalização. Mas trago dados para apoiar esta tese e não deixar que a afirmação seja baseada em “vozes da minha cabeça”.
+
+Segundo a *[Consumer Privacy Survey](https://www.cisco.com/c/dam/global/en_uk/products/collateral/security/cybersecurity-series-2019-cps.pdf)*, da Cisco, realizada em 2019, cerca de 84% dos respondentes se preocupam com sua privacidade e querem mais controle sobre seus dados. Também, segundo a mesma pesquisa, 48% dos respondentes trocaram de fornecedor de produtos ou serviços em função de suas políticas de privacidade, ou de práticas de compartilhamento de dados.
