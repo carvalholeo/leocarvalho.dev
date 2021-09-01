@@ -33,4 +33,6 @@ Além disso, o GA fornece detalhes extremos sobre o comportamento, além de reco
 
 ## O problema
 
-Se por um lado, temos muitas informações (anonimizadas, é verdade), por outro, as informações demográficas precisam ser conseguidos de alguma forma, como, por exemplo, por meio do
+Se por um lado, temos muitas informações (anonimizadas, é verdade), por outro, as informações demográficas precisam ser conseguidos de alguma forma, como, por exemplo, cidade identificada, faixa etária, etc. E não fica claro, nem nos termos de uso sobre como o GA faz essa identificação dos dados.
+
+Bom para anunciantes, que podem segmentar melhor seus anúncios; ruim para a privacidade dos usuários, que podem não querer ser segmentados de maneira tão específica (mesmo no caso do *[FLoC](https://tecnoblog.net/437966/o-que-e-floc/)* - Federated Learning of Cohorts, que cria segmentos mais "gerais").
