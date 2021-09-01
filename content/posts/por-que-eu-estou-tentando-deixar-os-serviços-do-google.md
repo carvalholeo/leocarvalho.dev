@@ -31,4 +31,6 @@ Considero essas informações extremamente básicas. Com o apoio de ferramentas 
 
 Além disso, o GA fornece detalhes extremos sobre o comportamento, além de recortes específicos dos usuários. Dá para visualizar detalhes demográficos de usuários que entram na página através de redes sociais, por exemplo.
 
-Se por um lado, temos
+## O problema
+
+Se por um lado, temos muitas informações (anonimizadas, é verdade), por outro, as informações demográficas precisam ser conseguidos de alguma forma, como, por exemplo, por meio do
