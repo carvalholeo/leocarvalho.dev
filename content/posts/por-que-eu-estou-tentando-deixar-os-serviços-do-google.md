@@ -1,6 +1,6 @@
 ---
 title: Por que eu estou deixando o Google Analytics?
-date: 2021-08-14T21:08:54.339Z
+date: 2021-09-03T02:41:31.238Z
 categories:
   - privacidade
   - LGPD
