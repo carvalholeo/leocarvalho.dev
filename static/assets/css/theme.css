@@ -1,12 +1,3 @@
-body.colorscheme-dark .highlight pre{
-  color: #212121;
-  background-color: #dfdfdf !important;
-}
-
-body.colorscheme-light .highlight pre{
-  background-color: #dfdfdf !important;
-}
-
 body .content .centered .about ul li a {
   line-height: 5rem;
 }
