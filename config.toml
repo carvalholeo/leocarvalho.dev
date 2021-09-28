@@ -20,3 +20,9 @@ pygmentscodefencesguesssyntax = true
         name = "About"
         weight = 1.0
         url = "/about/"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 5
+    ordered = true
+    startLevel = 2
