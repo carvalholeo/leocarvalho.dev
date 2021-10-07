@@ -78,6 +78,14 @@ enableRobotsTXT = true
   rel = "noopener noreferrer"
 
 [[social]]
+  name = "Instagram"
+  icon = "fa fa-instagram fa-3x"
+  weight = 4
+  url = "https://instagram.com/carvalho_leo"
+  target = "_blank"
+  rel = "noopener noreferrer"
+
+[[social]]
   name = "LinkedIn"
   icon = "fa fa-linkedin fa-3x"
   weight = 2.0
