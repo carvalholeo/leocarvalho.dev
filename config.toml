@@ -39,6 +39,8 @@ pygmentscodefencesguesssyntax = true
   favicon_16 = "/images/icons/favicon-16x16.png"
   touchIcon = "/images/icons/apple-touch-icon.png"
 
+  images = ["/images/icons/site-icon.png"]
+
   footercontent = "Made with ♥ from Guarujá/🇧🇷"
 
   hideFooter = false
