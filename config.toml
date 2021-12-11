@@ -62,60 +62,6 @@ pygmentscodefencesguesssyntax = true
   buildFuture = true
   enableRobotsTXT = true
 
-  [params.csp]
-    childsrc = [
-      "'self'",
-      "https://www.youtube.com",
-      "https://youtube.com"
-    ]
-    connectsrc = [
-      "'self'",
-      "https://analytics.leocarvalho.dev",
-      "https://*.googlesyndication.com",
-      "https://*.gstatic.com"
-    ]
-    fontsrc = [
-      "'self'",
-      "https://fonts.gstatic.com",
-      "https://cdn.jsdelivr.net/"
-    ]
-    formaction = ["'self'"]
-    framesrc = [
-      "'self'",
-      "https://www.youtube.com",
-      "https://youtube.com",
-      "https://googleads.g.doubleclick.net",
-      "https://*.google.com",
-      "https://*.googlesyndication.com"
-    ]
-    imgsrc = [
-      "'self'",
-      "https://*.gravatar.com",
-      "https://gravatar.com",
-      "https://*.ytimg.com",
-      "https://*.googlesyndication.com",
-    ]
-    objectsrc = ["'none'"]
-    stylesrc = [
-      "'self'",
-      "'unsafe-inline'",
-      "https://fonts.googleapis.com/",
-      "https://cdn.jsdelivr.net/"
-    ]
-    scriptsrc = [
-      "'self'",
-      "'unsafe-inline'",
-      "https://analytics.leocarvalho.dev",
-      "https://cdn.jsdelivr.net/",
-      "https://*.googlesyndication.com",
-      "https://*.doubleclick.net",
-      "https://*.googleadservices.com",
-      "https://*.google.com.br",
-      "https://*.google.com",
-      "https://*.googlesyndication.com"
-    ]
-    prefetchsrc = ["'self'"]
-
 
 [utterances]
   repo = "carvalholeo/leocarvalho.dev"
