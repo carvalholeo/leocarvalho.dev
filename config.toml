@@ -65,7 +65,7 @@ pygmentscodefencesguesssyntax = true
   enableRobotsTXT = true
 
 
-[utterances]
+[params.utterances]
   repo = "carvalholeo/leocarvalho.dev"
   issueTerm = "title"
   label = ""
