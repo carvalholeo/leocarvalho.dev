@@ -7,25 +7,25 @@ body .content .centered .about ul li a {
 }
 
 .cookie-banner {
-  position: fixed;
-  bottom: 40px;
-  left: 10%;
-  right: 10%;
-  padding: 5px 14px;
-  display: flex;
   align-items: center;
   background-color: inherit;
-  justify-content: space-between;
   border-radius: 5px;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  left: 10%;
+  padding: 5px 14px;
+  position: fixed;
+  right: 10%;
 }
 
 .close {
-  height: 25px;
+  align-items: center;
   border: none;
   border-radius: 2px;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  height: 25px;
   justify-content: center;
 }
 
@@ -47,4 +47,22 @@ body.colorscheme-light .close {
 body.colorscheme-dark .close {
   background-color: #dfdfdf;
   color: #212121;
+}
+
+img.emoji {
+  height: 1em;
+  margin: 0 0.2em 0 0.2em;
+  width: 1em;
+}
+
+main > nav > section.container > ul li:last-child a {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+main > nav > section.container > ul li > a img {
+  display: inline-block;
+  margin: 0 0.2em;
 }
