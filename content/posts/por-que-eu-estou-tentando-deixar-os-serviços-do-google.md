@@ -37,8 +37,24 @@ Se por um lado, temos muitas informações (anonimizadas, é verdade), por outro
 
 Bom para anunciantes, que podem segmentar melhor seus anúncios; ruim para a privacidade dos usuários, que podem não querer ser segmentados de maneira tão específica (mesmo no caso do *[FLoC](https://tecnoblog.net/437966/o-que-e-floc/)* — Federated Learning of Cohorts, que cria segmentos mais “gerais”).
 
-### Usuários querem privacidade
+## Usuários querem privacidade
 
 Evidentemente, essa afirmação é uma generalização. Mas trago dados para apoiar esta tese e não deixar que a afirmação seja baseada em “vozes da minha cabeça”.
 
 Segundo a *[Consumer Privacy Survey](https://www.cisco.com/c/dam/global/en_uk/products/collateral/security/cybersecurity-series-2019-cps.pdf)*, da Cisco, realizada em 2019, cerca de 84% dos respondentes se preocupam com sua privacidade e querem mais controle sobre seus dados. Também, segundo a mesma pesquisa, 48% dos respondentes trocaram de fornecedor de produtos ou serviços em função de suas políticas de privacidade, ou de práticas de compartilhamento de dados.
+
+Conforme indica a pesquisa *[Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information](https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/)*, da Pew Research Center, de 2019, 79% dos participantes estão preocupados um pouco ou muito preocupados sobre como as empresas utilizam os dados coletados dos usuários. A mesma preocupação atinge 64% das pessoas quando se trata do governo usando os dados dos seus cidadãos.
+
+Assim, podemos concluir que uma parcela significativa de cada um dos participantes das pesquisas está realmente preocupada com sua privacidade. Por consequência, é dever de todos que de alguma forma processam dados de usuários.
+
+## Leitor X Cliente
+
+Indiscutivelmente, a fatia de mercado do GA é enorme. Para ser mais exato, domina 73% dos sites, segundo o [Datanyze](https://www.datanyze.com/market-share/web-analytics--1). São milhões e milhões de sites, que possuem dezenas, centenas e até mesmo milhares de pontos de coletas em cada um deles. Essa maçaroca de dados faz com que o GA seja o maior fornecedor do gênero.
+
+Enquanto o serviço é gratuito para os usuários e donos de sites, o ditado deve ser lembrado: "não existe almoço grátis". E não há mesmo. Todos esses dados sendo repassados para a gigante de Moutain View a torna poderosa, podendo traçar perfis extremamente precisos de grupos de usuários, mesmo que a empresa fale que estão anônimos.
+
+Sinto-me extremamente desconfortável com a ideia de que vocês, leitores do site, sejam considerados clientes e produtos de uma empresa, que não se sabe como perfilará.
+
+Ou seja, quero que você continue lendo os textos aqui (sim, eu sei que estou falhando em publicar mais regularmente, mas isso é outra história) e quero saber quais páginas e tipos de texto você mais acessa. Mas você **NÃO** é meu cliente, é meu leitor.
+
+Não estou disposto a vender esta página para alguém que não o respeite. Esse é um princípio intrínseco meu, que não pretendo desfazer-me.
