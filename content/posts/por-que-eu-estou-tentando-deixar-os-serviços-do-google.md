@@ -39,7 +39,7 @@ Se por um lado, temos muitas informações (anonimizadas, é verdade), por outro
 
 Bom para anunciantes, que podem segmentar melhor seus anúncios; ruim para a privacidade dos usuários, que podem não querer ser segmentados de maneira tão específica (mesmo no caso do *[FLoC](https://tecnoblog.net/437966/o-que-e-floc/)* — Federated Learning of Cohorts, que cria segmentos mais “gerais”).
 
-## Usuários querem privacidade
+### Usuários querem privacidade
 
 Evidentemente, essa afirmação é uma generalização. Mas trago dados para apoiar esta tese e não deixar que a afirmação seja baseada em “vozes da minha cabeça”.
 
@@ -47,7 +47,15 @@ Segundo a *[Consumer Privacy Survey](https://www.cisco.com/c/dam/global/en_uk/pr
 
 Conforme indica a pesquisa *[Americans and Privacy: Concerned, Confused and Feeling Lack of Control Over Their Personal Information](https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/)*, da Pew Research Center, de 2019, 79% dos participantes estão preocupados um pouco ou muito preocupados sobre como as empresas utilizam os dados coletados dos usuários. A mesma preocupação atinge 64% das pessoas quando se trata do governo usando os dados dos seus cidadãos.
 
-Assim, podemos concluir que uma parcela significativa de cada um dos participantes das pesquisas está realmente preocupada com sua privacidade. Por consequência, é dever de todos que de alguma forma processam dados de usuários.
+Assim, podemos logicamente concluir que uma parcela significativa de cada um dos participantes das pesquisas está realmente preocupada com sua privacidade. Por consequência, é dever de todos que de alguma forma processam dados de usuários.
+
+### Bloqueios
+
+Dependendo do seu nível de preocupação com a quantidade de anúncios atrapalhando sua experiência de navegação, é provável que você tenha um bloqueador de anúncios.
+
+Além dos anúncios, estas extensões para navegadores também prestam um grande serviço aos usuários, bloqueando rastreadores de acesso, como o GA, Facebook Analytics e outros clientes de *analytics*.
+
+Então, nesse site, por exemplo, além de você não poder visualizar os anúncios, que estão devidamente bloqueados, eu perdia a oportunidade de saber quais páginas estão sendo acessadas, visto que também são bloqueados. Ou seja, sem saber como melhorar o site ou o conteúdo.
 
 ## Leitor X Cliente
 
