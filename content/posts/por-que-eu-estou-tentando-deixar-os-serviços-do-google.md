@@ -68,3 +68,9 @@ Sinto-me extremamente desconfortável com a ideia de que vocês, leitores do sit
 Ou seja, quero que você continue lendo os textos aqui (sim, eu sei que estou falhando em publicar mais regularmente, mas isso é outra história) e quero saber quais páginas e tipos de texto você mais acessa. Mas você **NÃO** é meu cliente, é meu leitor.
 
 Não estou disposto a vender esta página para alguém que não o respeite. Esse é um princípio intrínseco meu, que não pretendo desfazer-me.
+
+## Solução: troca de fornecedor
+
+Com tudo isso em mente, comecei a me questionar se não seria o momento ideal de trocar o fornecedor do serviço de *analytics*. Pesquisando, encontrei algumas opções interessantes, sendo que todas são *open source*.
+
+Aliás, esta era uma das premissas: um sistema que me permitisse auditar a maneira como os dados são coletados,
