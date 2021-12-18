@@ -35,7 +35,7 @@ Além disso, o GA fornece detalhes extremos sobre o comportamento, além de reco
 
 ## O problema
 
-Se por um lado, temos muitas informações (anonimizadas, é verdade), por outro, as informações demográficas precisam ser conseguidos de alguma forma, como, por exemplo, cidade identificada, faixa etária, etc. E não fica claro, nem nos termos de uso sobre como o GA faz essa identificação dos dados.
+Se por um lado, temos muitas informações (anonimizadas, é verdade), por outro, as informações demográficas precisam ser conseguidas de alguma forma, como, por exemplo, cidade identificada, faixa etária, etc. E não fica claro, nem nos termos de uso sobre como o GA faz essa identificação dos dados.
 
 Bom para anunciantes, que podem segmentar melhor seus anúncios; ruim para a privacidade dos usuários, que podem não querer ser segmentados de maneira tão específica (mesmo no caso do *[FLoC](https://tecnoblog.net/437966/o-que-e-floc/)* — Federated Learning of Cohorts, que cria segmentos mais “gerais”).
 
@@ -55,7 +55,7 @@ Dependendo do seu nível de preocupação com a quantidade de anúncios atrapalh
 
 Além dos anúncios, estas extensões para navegadores também prestam um grande serviço aos usuários, bloqueando rastreadores de acesso, como o GA, Facebook Analytics e outros clientes de *analytics*.
 
-Então, nesse site, por exemplo, além de você não poder visualizar os anúncios, que estão devidamente bloqueados, eu perdia a oportunidade de saber quais páginas estão sendo acessadas, visto que também são bloqueados. Ou seja, sem saber como melhorar o site ou o conteúdo.
+Então, nesse site, por exemplo, além de você não visualizar os anúncios, que estarão devidamente bloqueados, eu perdia a oportunidade de saber quais páginas estão sendo acessadas, visto que também são bloqueados. Ou seja, sem saber como melhorar o site ou o conteúdo.
 
 ## Leitor X Cliente
 
@@ -81,7 +81,7 @@ Nessa pesquisa, encontrei algumas opções, como o [Matomo](https://matomo.org/)
 
 No Ackee, eu achei uma solução bem interessante. É um script que tem menos possibilidade de ser bloqueado, já que está hospedado em meu próprio domínio. Também, é foi pensado para trabalhar sem a necessidade de um backend, podendo até mesmo ser colocado em serviços exclusivos de frontend, como Netlify e Vercel.
 
-Além dessas vantagens, o Ackee não utiliza cookies. Ou seja, o rastreamento acontece somente no site, não sendo repassado para outras empresas. Mesmo se você acessar outros sites sob meu controle, eu não saberei que ambos acessos são da mesma pessoa (embora eu consiga saber se você retornou ao site antes do prazo de 24h). Logo, se não há cookies de terceiros, há menos desafios para superar em relação à LGPD e Marco Civil da Internet.
+Além dessas vantagens, o Ackee não utiliza cookies. Ou seja, o rastreamento acontece somente no site, não sendo repassado para outras empresas. Mesmo se você acessar outros sites sob meu controle, eu não saberei que ambos os acessos são da mesma pessoa (embora eu consiga saber se você retornou ao site antes do prazo de 24h). Logo, se não há cookies de terceiros, há menos desafios para superar em relação à LGPD e Marco Civil da Internet.
 
 Outros pontos extremamente positivos:
 
