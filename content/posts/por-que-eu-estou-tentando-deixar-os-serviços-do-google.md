@@ -73,4 +73,8 @@ Não estou disposto a vender esta página para alguém que não o respeite. Esse
 
 Com tudo isso em mente, comecei a me questionar se não seria o momento ideal de trocar o fornecedor do serviço de *analytics*. Pesquisando, encontrei algumas opções interessantes, sendo que todas são *open source*.
 
-Aliás, esta era uma das premissas: um sistema que me permitisse auditar a maneira como os dados são coletados,
+Aliás, esta era uma das premissas: um sistema que me permitisse auditar a maneira como os dados são coletados. Também queria que não fosse intrusivo e, de preferência, passasse incólume pelos *adblockers*.
+
+Nessa pesquisa, encontrei algumas opções, como o [Matomo](https://matomo.org/), o [Plausible](https://plausible.io/), o [Hypercable](https://learnsql.io/) e o escolhido, o [Ackee Analytics](https://ackee.electerious.com/).
+
+### Ackee, uma solução equilibrada
