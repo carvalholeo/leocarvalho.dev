@@ -51,7 +51,7 @@ Assim, podemos logicamente concluir que uma parcela significativa de cada um dos
 
 ### Bloqueios
 
-Dependendo do seu nível de preocupação com a quantidade de anúncios atrapalhando sua experiência de navegação, é provável que você tenha um bloqueador de anúncios.
+Dependendo do seu nível de preocupação com a quantidade de anúncios atrapalhando sua experiência de navegação, é provável que você tenha um bloqueador de anúncios. E você não está sozinho: conforme informa a [Statista](https://www.statista.com/statistics/804008/ad-blocking-reach-usage-us/), 27% dos usuários dos Estados Unidos também utilizam algum *ad blocker.*
 
 Além dos anúncios, estas extensões para navegadores também prestam um grande serviço aos usuários, bloqueando rastreadores de acesso, como o GA, Facebook Analytics e outros clientes de *analytics*.
 
@@ -73,8 +73,12 @@ Não estou disposto a vender esta página para alguém que não o respeite. Esse
 
 Com tudo isso em mente, comecei a me questionar se não seria o momento ideal de trocar o fornecedor do serviço de *analytics*. Pesquisando, encontrei algumas opções interessantes, sendo que todas são *open source*.
 
-Aliás, esta era uma das premissas: um sistema que me permitisse auditar a maneira como os dados são coletados. Também queria que não fosse intrusivo e, de preferência, passasse incólume pelos *adblockers*.
+Aliás, esta era uma das premissas: um sistema que me permitisse auditar a maneira como os dados são coletados. Também queria que não fosse intrusivo e, de preferência, passasse incólume pelos *ad blockers*.
 
 Nessa pesquisa, encontrei algumas opções, como o [Matomo](https://matomo.org/), o [Plausible](https://plausible.io/), o [Hypercable](https://learnsql.io/) e o escolhido, o [Ackee Analytics](https://ackee.electerious.com/).
 
+
+
 ### Ackee, uma solução equilibrada
+
+No Ackee, eu achei uma solução bem interessante. É um script que tem menos possibilidade de ser bloqueado, já que está hospedado em meu próprio domínio. Também, é foi pensado para trabalhar sem a necessidade de um backend, podendo até mesmo ser colocado em serviços exclusivos de frontend, como Netlify e Vercel.
