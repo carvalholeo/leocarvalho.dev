@@ -12,7 +12,7 @@ He works as a development teacher at [Digital House Brasil](https://www.digitalh
 * 1 class of Full-stack with PHP, that has trained 15 developers in PHP
 * 4 classes of Full-stack with Node.js, training approximately 60 developers
 
-During 3 weeks, worked temporarily as Team Lead, replacing my manager while she was in Sick Leave. So, my squad and I managed 50 teachers and support team, doing technical interviews, admissions, and resignations.
+During 3 weeks, worked temporarily as Team Lead, replacing my manager while she was in Sick Leave. So, with his squad, managed 50 teachers and support team, doing technical interviews, admissions, and resignations.
 
 Previously, worked as a Training Instructor in [Atento Brasil](http://atento.com/pt/), in service of Telefónica - (Ocotber/2015 to July/2019) and Intern at [Foundation for Administrative Development](https://pt.wikipedia.org/wiki/Funda%C3%A7%C3%A3o_do_Desenvolvimento_Administrativo), from São Paulo State's Government (August/2012 to August/2014).
 
