@@ -1,32 +1,21 @@
-+++
-draft = false
-date = 2020-12-16T16:53:42-03:00
-title = "About me"
-slug = "about"
-+++
+---
+draft: false
+title: About me
+date: 2021-12-19T21:08:31.819Z
+slug: about
+---
+Leonardo (Leo) Carvalho is a backend developer, in Node.js. Graduated in Systems' Analysis and Development in 2021, by [Centro Universitário Estácio de Ribeirão Preto](https://estacio.br/), in Brazil 🇧🇷. Being passionate about information security, good practices of development, and project patterns, pretend to do an MBA in Software Engineer in 2022.
 
-Leonardo (Leo) Carvalho is a back-end developer, in PHP, Node.js, and C#. Graduated in Systems' Analysis and Development for [Centro Universitário Estácio de Ribeirão Preto](https://estacio.br/), in Brazil 🇧🇷. Being passionate about information security, good practices of development, and project patterns, pretend to do a Master's in one of these two areas in 2021.
+He works as a development teacher at [Digital House Brasil](https://www.digitalhouse.com/br), since April/2020, remotely. Since 2020, actively work to deliver 10 classes:
 
-He works as a development teacher at [Digital House Brasil](https://www.digitalhouse.com/br), since April/2020, remotely. In 2020, delivered 6 classes:
+* 5 classes exclusively focused on frontend, Git, and Agile. It was more than 210 people trained in the projects
+* 1 class of Full-stack with PHP, that has trained 15 developers in PHP
+* 4 classes of Full-stack with Node.js, training approximately 60 developers
 
-* 4 classes from the 'Estação Hack from Facebook' project, with 5 weeks of duration, and exclusively focused on front-end, Git, and Agile. It was more than 180 people trained in the project
+During 3 weeks, worked temporarily as Team Lead, replacing my manager while she was in Sick Leave. So, with his squad, managed 50 teachers and support team, doing technical interviews, admissions, and resignations.
 
-* 1 class of Full-stack with PHP, with 5 months of duration. It has trained 15 developers in PHP, with the above technologies:
-  * HTML, CSS, JavaScript, and React
-  * MySQL Server, and MySQL Workbench
-  * PHP, Laravel, Eloquent, and Blade Template Engine
-  * Using of Composer
-  * Git, GitHub, and Scrum
+Previously, worked as a Training Instructor in [Atento Brasil](http://atento.com/pt/), in service of Telefónica - (Ocotber/2015 to July/2019) and Intern at [Foundation for Administrative Development](https://pt.wikipedia.org/wiki/Funda%C3%A7%C3%A3o_do_Desenvolvimento_Administrativo), from São Paulo State's Government (August/2012 to August/2014).
 
-* 1 class of Full-stack with Node.js, with 5 months of duration. It has trained 14 developers, with the above technologies:
-  * HTML, CSS, JavaScript, and React
-  * MySQL Server, and MySQL Workbench
-  * Node.js, Express, Sequelize, and EJS Template Engine
-  * Using of NPM/NPX
-  * Git, GitHub, and Scrum
-
-Previously, worked as a Training Instructor in [Atento Brasil](http://atento.com/pt/) - in service of Telefónica - (January/2017 to July/2019), Jr Support Technician in [Atento Brasil](http://atento.com/pt/) - in service of Telefónica - (October/2015 to January/2017), and Intern at [Foundation for Administrative Development](https://pt.wikipedia.org/wiki/Funda%C3%A7%C3%A3o_do_Desenvolvimento_Administrativo), closed in 2015 by the Government of Sao Paulo State (August/2012 to August/2014).
-
-My portfolio is available also in my GitHub profile, and coming soon, will be are demo versions listed here too.
+My portfolio is available also in my GitHub profile, and coming soon, demo versions will be listed here too.
 
 Do you want to know more? You can get me in touch, through one of the ways in [home page](/en/) of my site or read more articles in the [blog](/posts) (almost all the content is available only in Portuguese of Brazil).
