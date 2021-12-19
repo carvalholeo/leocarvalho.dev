@@ -4,7 +4,7 @@ title: Sobre mim
 date: 2020-12-16T19:53:42.000Z
 slug: about
 ---
-Leonardo (Léo) Carvalho é desenvolvedor backend em PHP, Node.js e C#. Graduado em Análise e Desenvolvimento de Sistemas pelo [Centro Universitário Estácio de Ribeirão Preto](https://estacio.br/), no Brasil 🇧🇷. Apaixonado por segurança da informação e boas práticas de desenvolvimento de software e padrões de projeto, pretende fazer pós-graduação em Engenharia de Software em 2022.
+Leonardo (Léo) Carvalho é desenvolvedor backend em Node.js. Graduou-se em Tecnologia Análise e Desenvolvimento de Sistemas em 2021, pelo [Centro Universitário Estácio de Ribeirão Preto](https://estacio.br/), no Brasil 🇧🇷. Apaixonado por segurança da informação e boas práticas de desenvolvimento de software e padrões de projeto, pretende fazer pós-graduação em Engenharia de Software em 2022.
 
 Trabalha como professor de programação na [Digital House Brasil](https://www.digitalhouse.com/br) desde abril/2020, remotamente. Desde 2020, participou de ativamente na entrega de 10 turmas:
 
