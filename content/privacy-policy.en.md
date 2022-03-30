@@ -14,6 +14,14 @@ The personal information collected may include your name, e-mail, telephone numb
 
 The use of sites at leocarvalho.dev domain assumes that you accept this agreement of privacy. The leocarvalho.dev sites reserve the right to update this agreement without warning or advance notice. In this way, we recommend you to look at our privacy policy regularly, to be always updated with it.
 
+### Analytics
+
+This site uses Ackee Analytics to analyze user behavior on the site. This tool is focused in privacy and doesn't allow tracking across other sites, anonymizing every data and changing, rotating unique identifiers by each 24 hours, avoiding the same person be identified on the site.
+
+That system isn't hosted into third-party servers, all data stay with the owner of leocarvalho.dev site.
+
+To better understand how the tool works and, especially, how the data is anonymized, we recommend reading the page of [Ackee Anonymizing][anonimyze-ackee]
+
 #### Advertising
 
 Like other websites, we collect and use information inside advertising. The information inside it includes but is not limited to, your IP number (Internet Protocol), your ISP (Internet Service Provider -- your carrier), browser used to visit our website (as Chrome, Internet Explorer, Edge, Firefox), duration of your visit and what pages you visited here.
@@ -73,3 +81,4 @@ For any doubts or worries about this privacy policy, please, [get me in touch.][
 [ppAddtoany]: https://www.addtoany.com/privacy
 [contactLink]: mailto:leo@leocarvalho.dev
 [ppUterances]: https://github.com/utterance/utterances/blob/master/PRIVACY-POLICY.md
+[anonimyze-ackee]: https://docs.ackee.electerious.com/#/docs/Anonymization

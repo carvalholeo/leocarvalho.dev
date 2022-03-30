@@ -14,6 +14,14 @@ A informação pessoal recolhida pode incluir, mas não está limitada a, seu no
 
 O uso dos sites no domínio leocarvalho.dev pressupõe a aceitação deste acordo de privacidade. Os sites leocarvalho.dev reservam-se ao direito de alterar este acordo sem aviso. Deste modo, recomendamos que consulte a nossa política de privacidade com regularidade de forma a estar sempre atualizado.
 
+### Analytics
+
+Este site utiliza a ferramenta Ackee Analytics para analisar o comportamento do usuário no site. Essa ferramenta é focada em privacidade e não permite rastreamento através de outros sites, anonimizando todos os dados e trocando os identificadores únicos a cada 24 horas, para evitar que a pessoa seja identificada no site.
+
+Este sistema não fica em servidores de terceiros, sendo que todos os dados permanecem em poder do dono do site leocarvalho.dev.
+
+Para entender melhor como funciona a ferramenta e, especialmente, como os dados são anonimizados, recomendamos a leitura da página de [Anonimização do Ackee][anonimyze-ackee].
+
 #### Anúncios
 
 Tal como outros websites, coletamos e utilizamos informação contida nos anúncios. A informação contida nos anúncios, inclui o seu endereço IP (Internet Protocol), o seu ISP (Internet Service Provider), o navegador que utilizou ao visitar o nosso website (como o Chrome, Internet Explorer, Edge, Firefox), o tempo da sua visita e que páginas visitou dentro do nosso website.
@@ -71,3 +79,4 @@ Para quaisquer dúvidas ou preocupações a respeito desta política de privacid
 [ppAddtoany]: https://www.addtoany.com/privacy
 [contactLink]: mailto:leo@leocarvalho.dev
 [ppUterances]: https://github.com/utterance/utterances/blob/master/PRIVACY-POLICY.md
+[anonimyze-ackee]: https://docs.ackee.electerious.com/#/docs/Anonymization
