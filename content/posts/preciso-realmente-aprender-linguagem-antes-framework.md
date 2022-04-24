@@ -15,7 +15,7 @@ thumbnailImage: /images/uploads/planta.webp
 
 Por vezes, no grupo da faculdade ou outras comunidades, me deparo com a pergunta: “*Devo começar aprendendo o framework A ou B?*”. Quase sempre, minha resposta é: “*Quanto você sabe da linguagem base do framework?*”. E também, quase sempre, a resposta é “pouco” ou “quase nada”. Entender isso é a diferença entre começar a construir uma casa pelo telhado ou pela fundação. *(Spoiler:* usarei *essa analogia durante todo o texto. **Analogia is my passion**)*.
 
-![Planta baixa de uma casa, fora de escala](/images/uploads/planta.webp)
+{{< youtube vSy-U2MUuOA >}}
 
 Na maior parte das vezes, nós queremos construir programas e sites em uma velocidade extremamente rápida, para entregá-los também rapidamente, para gerar valor para o cliente e nos trazer o retorno financeiro que queremos. Isso é extremamente válido, não me interprete mal. O ponto que trago é: como você saberá se está fazendo algo certo, se não sabe como é o “certo”? Como saber se esse “certo” é o jeito mais atual da linguagem ou o melhor caminho para não haver gargalos na sua aplicação?
 
