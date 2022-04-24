@@ -1,6 +1,6 @@
 ---
 title: "ORM: melhorando o jeito que você consulta seu banco de dados"
-date: 2020-03-08T00:00:00Z
+date: 2020-03-08T00:00:00.000Z
 categories:
   - Por onde começar
 tags:
@@ -19,7 +19,7 @@ Então, pegando o exemplo dado naquele artigo, pensemos um pouco. A empresa de e
 Por outro lado, você também não tem noção de onde vem toda a energia consumida; não precisa saber quais são as matrizes energéticas até sua residência; não se preocupa com o tipo de fiação de alta tensão externa; pouco importa para você se tem uma subestação exclusiva para sua cidade ou se ela é compartilhada com outras. A sua responsabilidade é apenas instalar uma fiação adequada à legislação local, colocar pontos elétricos suficientes e bem dimensionados para o imóvel, instalar dispositivos de proteção contra raios e sobrecarga e fazer o pagamento pela utilização do serviço. Nada mais.
 *"Mas Léo, o que esse papo tem haver ORMs e programação??"*
 
-{{< iyoutube vSy-U2MUuOA }}
+{{< youtube vSy-U2MUuOA }}
 
 Simples. As responsabilidades são bem dividas e claras.
 
