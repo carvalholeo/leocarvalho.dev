@@ -1,6 +1,6 @@
 ---
-title: 'ORM: melhorando o jeito que você consulta seu banco de dados'
-date: '2020-03-08T00:00:00Z'
+title: "ORM: melhorando o jeito que você consulta seu banco de dados"
+date: 2020-03-08T00:00:00.000Z
 categories:
   - Por onde começar
 tags:
@@ -12,36 +12,37 @@ tags:
   - orm
 thumbnailImage: /images/uploads/mapa.webp
 ---
-No artigo anterior dessa série, em que falei sobre [a importância de aprender a linguagem antes do framework][framework], fiz uma analogia sobre como a companhia de luz entrega energia na residência. Partindo disso, quero falar hoje sobre o que é um ORM e sua importância para o desenvolvimento de software.
+No artigo anterior dessa série, em que falei sobre [a importância de aprender a linguagem antes do framework](/posts/preciso-realmente-aprender-linguagem-antes-framework/), fiz uma analogia sobre como a companhia de luz entrega energia na residência. Partindo disso, quero falar hoje sobre o que é um ORM e sua importância para o desenvolvimento de software.
 
 Então, pegando o exemplo dado naquele artigo, pensemos um pouco. A empresa de energia não sabe quantas tomadas tem no imóvel que vai entregar o ponto de eletricida; não sabe quantas ou onde estão as lâmpadas; não faz a menor ideia sobre os equipamentos que vão consumir energia naquele lugar. A responsabilidade dela é apenas instalar os fios no seu poste particular, entregar a tensão (voltagem) contratada, fornecer energia nos padrões aceitáveis segundo a legislação local e realizar a medição de consumo para posterior cobrança da utilização. Nada mais.
 
 Por outro lado, você também não tem noção de onde vem toda a energia consumida; não precisa saber quais são as matrizes energéticas até sua residência; não se preocupa com o tipo de fiação de alta tensão externa; pouco importa para você se tem uma subestação exclusiva para sua cidade ou se ela é compartilhada com outras. A sua responsabilidade é apenas instalar uma fiação adequada à legislação local, colocar pontos elétricos suficientes e bem dimensionados para o imóvel, instalar dispositivos de proteção contra raios e sobrecarga e fazer o pagamento pela utilização do serviço. Nada mais.
 *"Mas Léo, o que esse papo tem haver ORMs e programação??"*
 
-{{< iframe-youtube "https://www.youtube.com/embed/vSy-U2MUuOA" >}}
+{{< youtube vSy-U2MUuOA >}}
 
 Simples. As responsabilidades são bem dividas e claras.
 
 Numa aplicação real, você com certeza precisa consultar dados em algum lugar. Em quase 100% dos casos, eles estão em um banco de dados, cujo informações pode ser consultadas através de SQL.
 
-O problema que se apresenta é que, para os iniciantes, é complicado ter de aprender mais uma linguagem, apenas para fazer um [CRUD][crud]. Ou seja, além de pensar em aprender como criar uma aplicação, ainda que simples, o dev iniciante precisa aprender onde esses dados estão armazenados e como consultar ou criar novas informações no banco de dados. E é aí que entram os ORMs.
+O problema que se apresenta é que, para os iniciantes, é complicado ter de aprender mais uma linguagem, apenas para fazer um [CRUD](http://devfuria.com.br/sql/mysql-crud/). Ou seja, além de pensar em aprender como criar uma aplicação, ainda que simples, o dev iniciante precisa aprender onde esses dados estão armazenados e como consultar ou criar novas informações no banco de dados. E é aí que entram os ORMs.
 
 ORM é uma sigla que significa *"Object Relational Mapping"*, ou "Mapeamento de Relação-Objeto". Com os ORMs, você não precisa criar uma query SQL para fazer um CRUD simples na aplicação. Basta continuar utilizando sua linguagem de programação favorita, com alguns comandos específicos de framework ou lib, que, por baixo dos panos, criam uma query SQL. Esta query é, em grandiosa parte das vezes, a mais otimizada possível.
 
 Bem, se é um mapeamento, então temos uma espécie de "tradução". Então, vamos os termos originais e seus correspondentes.
 
 | SQL (Relação)                | ORM (Objeto) |
-|------------------------------|--------------|
+| ---------------------------- | ------------ |
 | Tabelas                      | Classes      |
 | Linhas (registros ou tuplas) | Instâncias   |
 
 Assim, ao invés de trabalhar com uma string ou um array que vem como resposta do banco de dados, você utiliza instâncias de objetos da sua própria aplicação, que pode trazer as regras de tipos e objetos para os dados que serão utilizados. Além disso, como dito anteriormente, não precisa se preocupar com os comandos SQL utilizados; apenas com as classes e suas instâncias.
 
------
+- - -
+
 Apenas falar é fácil. Vou dar um exemplo usando o Eloquent, o ORM padrão do Laravel. Como o objetivo desse post não é configurar uma aplicação do zero, vou desconsiderar essa parte. Visualize apenas o jeito de fazer as coisas. Para isso, vamos considerar uma tabela chamada "Clientes" e como inserir dados nela.
 
------
+- - -
 
 No SQL:
 
@@ -71,6 +72,3 @@ Tanto o exemplo em SQL quanto com Eloquent, vai gerar o mesmo resultado: salvar 
 Dessa forma, além de diminuir a barreira de entrada no mundo da programação, isolamos as responsabilidades e mantemos o código o mais limpo possível.
 
 É claro que nesse artigo não tenho a intenção de esgotar o assunto que, por si só daria uma série de tutoriais e explicações (talvez o faça no futuro). Mas estou abertos a feedbacks sobre esse assunto e como melhorar esse artigo :-)
-
-[framework]: /posts/preciso-realmente-aprender-linguagem-antes-framework/
-[crud]: http://devfuria.com.br/sql/mysql-crud/
