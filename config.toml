@@ -56,7 +56,7 @@ pygmentscodefencesguesssyntax = true
 
   math = true
   customCSS = ['css/theme.css']
-  customJS = ["js/twemoji.min.js", "js/addToAny.js"]
+  customJS = ["js/twemoji.js", "js/addToAny.js"]
 
   buildDrafts = false
   buildFuture = true
