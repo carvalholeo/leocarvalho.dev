@@ -92,6 +92,14 @@ pygmentscodefencesguesssyntax = true
   url = "https://twitter.com/_carvalho_leo/"
   target = "_blank"
   rel = "noopener noreferrer"
+  
+[[params.social]]
+  name = "Mastodon"
+  icon = "fa fa-mastodon fa-2x"
+  weight = 3.1
+  url = "https://ursal.zone/@carvalho_leo"
+  target = "_blank"
+  rel = "noopener noreferrer me"
 
 [[params.social]]
   name = "YouTube"
